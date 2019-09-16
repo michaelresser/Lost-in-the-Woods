@@ -1,0 +1,30 @@
+/* ELEMENTS */
+button {
+  width: 7rem;
+  height: 5rem;
+
+  background: #69a1bb;
+}
+/* ID's */
+#background {
+  background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
+    center/ cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#dialogueBox {
+  margin: auto;
+  padding: 0;
+  width: 40vw;
+  min-width: 320px;
+  background: silver;
+  box-shadow: 0px 0px 10rem silver;
+  text-align: center;
+}
