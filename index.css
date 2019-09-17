@@ -1,30 +1,50 @@
 /* ELEMENTS */
-button {
-  width: 7rem;
-  height: 5rem;
-
-  background: #69a1bb;
+body{
+    margin: 0;
+    padding: 0;
 }
-/* ID's */
-#background {
-  background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/ cover;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-}
-
-#dialogueBox {
-  margin: auto;
-  padding: 0;
-  width: 40vw;
-  min-width: 320px;
-  background: silver;
-  box-shadow: 0px 0px 10rem silver;
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: .5rem;
+  font-size: 1.5rem;
+  color: white;
   text-align: center;
 }
+
+/* ID's */
+#background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
+    center/cover fixed;
+}
+#titleBox {
+  
+  min-width: 320px;
+  height: 320px;
+  
+  padding: 2rem;
+  color: white;
+  text-align: center;
+
+}
+#mainTitle{
+    color: red;
+    font-size: 5rem;
+}
+#play {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: none;
+  border: 0.5rem solid white;
+  border-radius: 100%;
+  color: #abf8b2;
+  font-size: 2rem;
+}
+/* CLASSES */
