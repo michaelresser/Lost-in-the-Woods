@@ -13,6 +13,7 @@ footer {
 }
 
 /* ID's */
+
 #background {
     position: relative;
     display: flex;
@@ -24,11 +25,15 @@ footer {
     background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
     center/cover fixed;
 }
+#titleImg{
+  width: 600px;
+  height: 600px;
+  background: url('Lost in the Woods Logo.png') center/ cover;
+}
+
 #titleBox {
-  
   min-width: 320px;
   height: 320px;
-  
   padding: 2rem;
   color: white;
   text-align: center;
