@@ -1,24 +1,45 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta title='Lost in the Woods...' />
     <link rel='stylesheet' type='text/css' href='../index.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' />
+    <link rel='' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'>
+    <link rel='stylesheet' type='text/css' href='../index.css'>
 </head>
 
 <body>
-    <div id='background'>
-        <div id='titleBox'>
-            <!-- Looking at that marker sketch into a  graphic to sit here instead of trying to css the fuck out of this h1 tag... -MRE -->
-            <div id='titleImg'></div> 
-            <button id='play'>
-                <a href='/thecavern.html'>Play!</a>
-            </button>            
+
+    <div id='home'>
+        <div id='titleBox' class='row justify-content-center'>
+            <img id='titleImg' class='image-fliud' src='/images/Lost in the Woods Logo.png'
+                alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
         </div>
-        <footer>
-            <a>Tripp Martin</a> | ,<a>Mike Esser</a>
-        </footer>
-        </footer>
+        <div class='row justify-content-center'>
+            <button id='start-button'>
+                <a href='#the-cavern'>press start</a>
+            </button>
+        </div>
+    </div>
+    <!-- this div is my attempt at a black fadein/ fadeout to change scenes -->
+
+    <div id='scene-change' class='container-fluid'></div>
 
     </div>
+    <!-- SCENE 1: The Cavern.
+        The Scroll stops here and the agame can be played again!  -->
+    <div id='the-cavern' class='chapter container-fluid'>
+    </div>
+
+    <footer class='row justify-content-center'>
+        <!-- take this footer and move the inforamation into a navbar at the top, under a dropdown tab called credits -->
+        <a>Tripp Martin</a> | ,<a>Mike Esser</a>
+    </footer>
+    </footer>
+    </div>
 </body>
+
+</html>

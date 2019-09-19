@@ -1,55 +1,50 @@
-/* ELEMENTS */
-body{
-    margin: 0;
-    padding: 0;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  padding: .5rem;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-}
+/* IMPORTS and OTHER HEAD STUFF */
+@font-face{
+  font-family: 'RetroGaming';
+  src: url('fonts/Retro Gaming.ttf');
 
+}
+/* ELEMENTS */
+html{
+  scroll-behavior: smooth;
+}
+footer{background: none;}
 /* ID's */
 
-#background {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items:center;
+#home {   
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover fixed;
+    center/cover;
+    box-shadow: 0rem 5rem 3rem 3rem #1D4F5E;
 }
 #titleImg{
-  width: 600px;
-  height: 600px;
-  background: url('Lost in the Woods Logo.png') center/ cover;
+  max-width: 60vw;
+  height: 60vh;  
+}
+#start-button {
+  background: black;
+  border: 2px solid silver;
+  border-radius: 5px;
+  padding: .5rem 3rem .75rem 3rem;
+  font-size: 3rem;
+}
+#start-button a{
+  color: silver;
+  font-family: 'retroGaming';
 }
 
-#titleBox {
-  min-width: 320px;
-  height: 320px;
-  padding: 2rem;
-  color: white;
-  text-align: center;
+#scene-change{
+  height: 1000vh;  
+  background: linear-gradient(to bottom, #1D4F5E, black 50%,#1E0117);
+  
+}
+#the-cavern{
+height: 100vh;
+background: url('/images/the-dark-wood.png') center/ cover fixed;
+}
 
-}
-#mainTitle{
-    color: red;
-    font-size: 5rem;
-}
-#play {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: none;
-  border: 0.5rem solid white;
-  border-radius: 100%;
-  color: #abf8b2;
-  font-size: 2rem;
-}
 /* CLASSES */
+.chapter{
+  height: 100vh;  
+}
