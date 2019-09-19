@@ -20,58 +20,51 @@
 </head>
 
 <body>
-
+    <!-- HOME PAGE -->
     <div id='home'>
-        <div id='titleBox' class='row justify-content-center'>
-            <img id='titleImg' class='image-fliud' src='images/Lost in the Woods Logo.png'
-                alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
-        </div>
-        <div class='row justify-content-center'>
-            <button id='start-button'>
-                <a href='#chapter1'>press start</a>
-            </button>
+        <div class='container-fluid chapter'>
+            <div id='titleBox' class='row justify-content-center'>
+                <img id='titleImg' class='image-fliud' src='images/Lost in the Woods Logo.png'
+                    alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
+            </div>
+            <div class='row justify-content-center'>
+                <button id='start-button'>
+                    <a href='#chapter1'>press start</a>
+                </button>
+            </div>
         </div>
     </div>
-    <!-- this div is my attempt at a black fadein/ fadeout to change scenes -->
-
+    <!-- SCENCE CHANGE GRADIENT-->
     <div id='scene-change' class='container-fluid'></div>
 
-    </div>
     <!-- SCENE 1: The Woods.
         You find yourself in a dark wood serching for the path home! You must make it throught this maze of trees, to find the river.   -->
-    <div id='chapter1' class='chapter container-fluid'>
+    <div id='chapter1'>
+        <div class='chapter container-fluid'>
         <div class='row'>
-            <!-- character image -->
-            <div class='left col-lg-6 col-md-12'>
-<<<<<<< HEAD
-                    <img class='img-fluid' src='images/the-bat.png'>
-=======
-                    <img class='img-fluid' src='images/bat-hanging-on-tree-branch.jpg'>
->>>>>>> 14e0f7935445c022564c0dbc13e2d3d3309a4436
+            <h1 id='chapterTitle'>The Woods!</h1>
+        </div>
+        <div class='row'>
+            <!-- Left Frame/ Top Frame: Images-->
+            <div class='col-lg-8 col-lg-6 col-md-12'>
+                <img id='the-bat' class=' img-fluid' src='images/the-bat.png'>
             </div>
-            <!-- Game Box -->
+            <!-- Right Frame/ Bottom Frame: Story and Game Controls-->
             <div class='right col-lg-6 col-md-6'>
-                <div class='row'>
-                <h1 id='titleChapter1'>The Woods!</h1>
-            </div>
-                <div id='textBox' class='text-box row'>
-                	<p>You find yourself in a dark wood serching for the path home! You must make it throught this maze of trees, to find the river.</p>
+                <div id='chapter-1-text' class='text-box row'>
+                    <p>You find yourself in a dark wood serching for the path home! You must make it throught
+                        this maze of trees, to find the river.</p>
                 </div>
-                <div id='gameBoxChapter1' class='gameBox row justify-content-center'>
+                <div id='chapter-1-controls' class='controls row justify-content-center'>
                     <button id='back'>Back</button>
-                    <button id='continue-button' onClick='theWoods1()'>Continue</button>
-
+                    <button id='continue' onClick='theWoods1()'>Continue</button>
                 </div>
             </div>
-            
+        </div>
         </div>
     </div>
 
-    <footer class='row justify-content-center'>
-        <!-- take this footer and move the inforamation into a navbar at the top, under a dropdown tab called credits -->
-        <a>Tripp Martin</a> | ,<a>Mike Esser</a>
-    </footer>
-    </footer>
+
     </div>
 </body>
 

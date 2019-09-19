@@ -15,7 +15,7 @@ footer{background: none;}
     width: 100vw;
     height: 105vh;
     background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover;
+    center/cover fixed; 
     box-shadow: 0rem 5rem 3rem 3rem #1D4F5E;
 }
 #titleImg{
@@ -35,30 +35,37 @@ footer{background: none;}
 }
 
 #scene-change{
-  height: 1000vh;  
+  height: 800vh;  
   background: linear-gradient(to bottom, #1D4F5E, black 50%,#1E0117);
   
 }
 #chapter1{
-height: 100vh;
 background: url('/images/the-dark-wood.png') center/ cover fixed;
+}
+#chapter-1-text{
+
+}
+#chapter-1-controls{
+
 }
 
 /* CLASSES */
+.hidden{
+  opacity: 0;
+}
 .chapter{
   height: 100vh;  
-  color: silver;
-}
-.chapter .left{
-  padding: 1rem;
-}
-.chapter .chapterTitle{
-  margin: 2rem 1rem;
-}
-.chapter .gameBox{
-  border:3px solid silver; 
-  background: none;
+  max-width: 1200px;
   color: silver;
 }
 
-.chapter .gamebox
+.controls{
+  
+}
+
+.controls button{
+  background: none;
+  border: 3px solid silver;
+  padding: 1rem;
+  color: silver;
+}
