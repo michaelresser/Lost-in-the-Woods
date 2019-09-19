@@ -39,7 +39,7 @@ footer{background: none;}
   background: linear-gradient(to bottom, #1D4F5E, black 50%,#1E0117);
   
 }
-#the-cavern{
+#chapter1{
 height: 100vh;
 background: url('/images/the-dark-wood.png') center/ cover fixed;
 }
@@ -47,4 +47,18 @@ background: url('/images/the-dark-wood.png') center/ cover fixed;
 /* CLASSES */
 .chapter{
   height: 100vh;  
+  color: silver;
 }
+.chapter .left{
+  padding: 1rem;
+}
+.chapter .chapterTitle{
+  margin: 2rem 1rem;
+}
+.chapter .gameBox{
+  border:3px solid silver; 
+  background: none;
+  color: silver;
+}
+
+.chapter .gamebox
