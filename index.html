@@ -21,10 +21,10 @@
 
 <body>
     <!-- HOME PAGE -->
-    <div id='home'>
-        <div class='container-fluid chapter'>
-            <div id='titleBox' class='row justify-content-center'>
-                <img id='titleImg' class='image-fliud' src='images/Lost in the Woods Logo.png'
+    <div id='home' class='container-fluid'>
+        <div class='chapter'>
+            <div class='row justify-content-center'>
+                <img id='home-img' class='image-fliud' src='images/Lost in the Woods Logo.png'
                     alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
             </div>
             <div class='row justify-content-center'>
@@ -34,34 +34,35 @@
             </div>
         </div>
     </div>
-    <!-- SCENCE CHANGE GRADIENT-->
-    <div id='scene-change' class='container-fluid'></div>
 
-    <!-- SCENE 1: The Woods.
-        You find yourself in a dark wood serching for the path home! You must make it throught this maze of trees, to find the river.   -->
-    <div id='chapter1'>
-        <div class='chapter container-fluid'>
-        <div class='row'>
-            <h1 id='chapterTitle'>The Woods!</h1>
-        </div>
-        <div class='row'>
-            <!-- Left Frame/ Top Frame: Images-->
-            <div class='col-lg-8 col-lg-6 col-md-12'>
-                <img id='the-bat' class=' img-fluid' src='images/the-bat.png'>
+    <!-- SCENCE CHANGE GRADIENT-->
+    <!-- <div id='scene-change' class='container-fluid'></div> -->
+
+    <!-- Chapter 1: The Woods -->
+
+    <div id='chapter1' class='container-fluid'>
+        <div class='chapter' class='d-flex flex-column'>
+            <div class='chapter-title row'>
+                <h1>The Woods</h1>
             </div>
-            <!-- Right Frame/ Bottom Frame: Story and Game Controls-->
-            <div class='right col-lg-6 col-md-6'>
-                <div id='chapter-1-text' class='text-box row'>
-                    <p>You find yourself in a dark wood serching for the path home! You must make it throught
-                        this maze of trees, to find the river.</p>
+            <div class='row'>
+                <div id='ch1-image' class=' justify-content-center'>
+                    <img id='the-bat' class=' img-fluid hidden' src='images/the-bat.png'>
                 </div>
-                <div id='chapter-1-controls' class='controls row justify-content-center'>
-                    <button id='back'>Back</button>
-                    <button id='continue' onClick='theWoods1()'>Continue</button>
+                <div id='ch1-game' class='row bg-dark'>
+                    <div id='ch1-text' class='ch1-text col-10'>
+                        <p>You find yourself in a dark wood searching for the path home! You must find a way through
+                            this maze of trees, and make it to the river.</p>
+                    </div>
+                </div>
+                <div id='ch1-controls' class='chapter-controls row'>
+                    <button id='continue' class=''>Continue</button>
+
                 </div>
             </div>
+
         </div>
-        </div>
+    </div>
     </div>
 
 
