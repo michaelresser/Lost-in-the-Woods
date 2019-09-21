@@ -17,15 +17,20 @@ footer{background: none;}
 .chapter{
   height: 100vh;
   width: 100vw;
-  max-width: 1000px;  
-  padding: 2rem;
-  
+  max-width: 1000px;
+  margin:auto;  
   color: silver;
 }
-.chapter-title{
-  
+.title{
+  height: 10%;
 }
-.chapter-controls{
+.text-box{
+  padding: 1rem;
+}
+.game-box{
+  margin: 0;
+  height: 50%;
+  background: black;
   
 }
 
@@ -35,21 +40,30 @@ footer{background: none;}
     background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
     center/cover fixed; 
 }
-#home-img{
-  max-width: 60vw;
-  height: 60vh;  
+#home-logo{
+  height: 60%;
+
+}
+#home-logo img{
+  height: 100%;
 }
 #start-button {
-  background: black;
+  margin-top: 5rem;
   border-radius: 5px;
-  font-size: 2rem;
-  padding: .5rem 3rem;
+  font-size: 1.5rem;
+  padding: .5rem 2rem;
   border-radius: 10px;
-  color: darkgray;
+  color: silver;
+  transition: all ease-in-out .5s;
+}
+#start-button:hover{
+  background: silver;
+  box-shadow: 0px 0px 5px 5px silver;
+  transform: scale(1.1);
 }
 #start-button a{
   color: inherit;
-  font-family: 'retroGaming';
+  /* font-family: 'retroGaming'; */
 }
 /* SCENE CHANGE STYLES */
 #scene-change{
@@ -60,7 +74,7 @@ footer{background: none;}
 
 /* CHAPTER 1 STYLES */
 #chapter1{
-background: url('/images/the-dark-wood.png') center/ cover fixed;
+background: url('/images/the-dark-wood.png');
 }
 
 #ch1-title{
@@ -72,4 +86,49 @@ background: url('/images/the-dark-wood.png') center/ cover fixed;
 }
 #ch1-controls{
 }
+#ch1-continue{
 
+}
+#ch1-back{}
+
+/* CHAPTER 2 Styles */
+#chapter-2{
+  background: linear-gradient(to bottom right, rgb(62, 157, 235) 10%, rgb(0, 5, 8) );
+}
+#ch2-game{
+
+}
+#ch2-text{
+  width: 100%;
+}
+#ch2-continue{
+}
+#ch2-back{
+
+}
+
+/* CHAPTER 3 Styles */
+#chapter-3{
+  background: linear-gradient(to bottom right, rgb(3, 212, 55) 10%, rgb(1, 44, 7) );
+}
+#ch3-image{
+  height: 40%;
+}
+#ch3-game{
+height: 40%
+
+}
+#ch3-text{
+
+}
+#ch3-controls{
+  height: 10%;
+}
+#ch3-continue{
+
+}
+#ch3-back{
+
+}
+
+/* EPILOGUE STYLES */
