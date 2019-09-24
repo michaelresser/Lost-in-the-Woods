@@ -1,138 +1,169 @@
 /* IMPORTS and OTHER HEAD STUFF */
-@font-face{
+@font-face {
   font-family: 'RetroGaming';
   src: url('fonts/Retro Gaming.ttf');
-
 }
 /* GLOBAL ELEMENT STYLING */
-html{
+html {
   scroll-behavior: smooth;
 }
 
 /* GLOBAL CLASSES */
-.hidden{
+.hidden {
   opacity: 0;
 }
-.chapter{
+.chapter {
   height: 100vh;
   width: 100vw;
   padding: 2rem;
   color: silver;
 }
-.chapter-title{
-  color: silver;  
+.chapter-title {
+  color: silver;
 }
-.image-box{
-
+.image-box {
 }
-.game-box{
+.game-box {
   min-height: 50%;
-  background: black;  
+  background: black;
 }
-.text-box{
+.text-box {
   padding: 2rem;
+}
+.text {
+}
+.control-box {
+  padding: 1rem;
+}
+/* GLOBAL ID'S */
+#top-button {
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+  background: #000000;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: silver;
+  border-radius: 5px;
+  transition: all ease .8s;
+}
+#top-button > i {
   
 }
-.text{
-}
-.control-box{
-  padding: 1rem;
+#top-button:hover {
+  box-shadow: 0px 0px 5px 5px silver;
+  transform: scale(1.1); 
+
 }
 
 /* HOME PAGE STYLES */
-#home {   
-    background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover fixed; 
+#home {
+  background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
+    center/cover fixed;
 }
-#home-logo{
+#home-logo {
   height: 60%;
-
 }
-#home-logo img{
+#home-logo img {
   height: 100%;
 }
 #start-button {
   margin-top: 5rem;
+  padding: 0 1rem;
   border-radius: 5px;
-  font-size: 1.5rem;
-  padding: .5rem 2rem;
-  border-radius: 10px;
+  background: #000000;
   color: silver;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
 }
-#start-button:hover{
-  background: silver;
+#start-button:hover {
+  background: rgb(109, 0, 233);
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1);
 }
-#start-button a{
+#start-button a {
   color: inherit;
   /* font-family: 'retroGaming'; */
 }
 /* SCENE CHANGE STYLES */
-#scene-change{
-  height: 800vh;  
-  background: linear-gradient(to bottom, #1D4F5E, black ,#1E0117);
-  
+#scene-change {
+  height: 800vh;
+  background: linear-gradient(to bottom, #1d4f5e, black, #1e0117);
 }
 
 /* CHAPTER 1 STYLES */
-#ch1{
-background: url('/images/the-dark-wood.png');
+#ch1 {
+  background: url('/images/the-dark-wood.png');
 }
-#ch1-title{
-  transition: all ease-in .5s;
+#ch1-title {
+  transition: all ease-in 0.5s;
 }
-#ch1-text{
+#ch1-text {
   margin-top: 1rem;
 }
-#ch1-controls{
+#ch1-controls {
 }
-#ch1-continue{
-
+#ch1-continue {
 }
-#ch1-back{}
+#ch1-back {
+}
 
 /* CHAPTER 2 Styles */
-#ch2{
-  background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(41,137,216,1) 17%,rgba(41,137,216,1) 17%,rgba(41,137,216,1) 86%,rgba(0,0,0,1) 100%) ;
+#ch2 {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(41, 137, 216, 1) 17%,
+    rgba(41, 137, 216, 1) 17%,
+    rgba(41, 137, 216, 1) 86%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-#ch2-game{
-
+#ch2-game {
 }
-#ch2-text{
+#ch2-text {
   width: 100%;
 }
-#ch2-continue{
+#ch2-continue {
 }
-#ch2-back{
-
+#ch2-back {
 }
 
 /* CHAPTER 3 Styles */
-#ch3{
-  background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(51,122,23,1) 19%,rgba(51,122,23,1) 81%,rgba(51,122,23,1) 81%,rgba(0,0,0,1) 100%);
+#ch3 {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(51, 122, 23, 1) 19%,
+    rgba(51, 122, 23, 1) 81%,
+    rgba(51, 122, 23, 1) 81%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
-#ch3-image{
+#ch3-image {
   height: 40%;
 }
-#ch3-game{
-height: 40%
-
+#ch3-game {
+  height: 40%;
 }
-#ch3-text{
-
+#ch3-text {
 }
-#ch3-controls{
+#ch3-controls {
 }
-#ch3-continue{
-
+#ch3-continue {
 }
-#ch3-back{
-
+#ch3-back {
 }
 
 /* FINALE STYLES */
-#finale{
-  background: linear-gradient(135deg, rgba(235,241,246,1) 0%,rgba(171,211,238,1) 18%,rgba(171,211,238,1) 18%,rgba(137,195,235,1) 78%,rgba(137,195,235,1) 78%,rgba(213,235,251,1) 100%);
+#finale {
+  background: linear-gradient(
+    135deg,
+    rgba(235, 241, 246, 1) 0%,
+    rgba(171, 211, 238, 1) 18%,
+    rgba(171, 211, 238, 1) 18%,
+    rgba(137, 195, 235, 1) 78%,
+    rgba(137, 195, 235, 1) 78%,
+    rgba(213, 235, 251, 1) 100%
+  );
 }
