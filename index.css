@@ -13,7 +13,7 @@ html {
   opacity: 0;
 }
 .chapter {
-  height: 100vh;
+  min-height: 100vh;  
   width: 100vw;
   padding: 2rem;
   color: silver;
@@ -22,10 +22,14 @@ html {
   color: silver;
 }
 .image-box {
+  min-height: 50vh;
+  border: 2px solid silver;
 }
 .game-box {
   min-height: 50%;
   background: black;
+  border-radius: 10px;
+  border: 2px solid silver;
 }
 .text-box {
   padding: 2rem;
@@ -46,10 +50,9 @@ html {
   bottom: 0;
   color: silver;
   border-radius: 5px;
-  transition: all ease .8s;
+  transition: all ease 0.8s;
 }
 #top-button > i {
-  
 }
 #top-button:hover {
   box-shadow: 0px 0px 5px 5px silver;
@@ -118,7 +121,7 @@ html {
     rgba(41, 137, 216, 1) 17%,
     rgba(41, 137, 216, 1) 17%,
     rgba(41, 137, 216, 1) 86%,
-    rgba(0, 0, 0, 1) 100%
+    rgb(218, 144, 144) 100%
   );
 }
 #ch2-game {
@@ -159,13 +162,8 @@ html {
 
 /* FINALE STYLES */
 #finale {
-  background: linear-gradient(
-    135deg,
-    rgba(235, 241, 246, 1) 0%,
-    rgba(171, 211, 238, 1) 18%,
-    rgba(171, 211, 238, 1) 18%,
-    rgba(137, 195, 235, 1) 78%,
-    rgba(137, 195, 235, 1) 78%,
-    rgba(213, 235, 251, 1) 100%
-  );
+  background:  rgba(255, 174, 0) 90%;
+}
+#finale-image{
+  
 }
