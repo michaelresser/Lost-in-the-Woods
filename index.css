@@ -54,7 +54,9 @@ html {
 #top-button:hover {
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1); 
-
+}
+#chapter1{  
+  background: url('images/the-dark-wood.png') center/ cover fixed;
 }
 
 /* HOME PAGE STYLES */
