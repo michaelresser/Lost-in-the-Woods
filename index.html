@@ -6,6 +6,7 @@
     <meta title='Lost in the Woods...' />
     <link rel='stylesheet' type='text/css' href='index.css'>
     <script type='text/javascript' src='index.js'></script>
+    <!-- Boostrap 4.3.1. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,55 +18,127 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9ad1e616cb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- HOME PAGE -->
-    <div id='home'>
-        <div class='container-fluid chapter'>
-            <div id='titleBox' class='row justify-content-center'>
-                <img id='titleImg' class='image-fliud' src='images/Lost in the Woods Logo.png'
-                    alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
-            </div>
-            <div class='row justify-content-center'>
-                <button id='start-button'>
-                    <a href='#chapter1'>press start</a>
-                </button>
-            </div>
+    <div id='home' class='chapter'>
+        <div id='home-logo' class='chapter-image row justify-content-center'>
+            <img class='image-fluid' src='images/Lost in the Woods Logo.png'
+                alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
+        </div>
+        <div class='row justify-content-center'>
+            <button id='start-button' class=''>
+                <a href='#ch1'>
+                    <h1>press start</h1>
+                </a>
+            </button>
         </div>
     </div>
-    <!-- SCENCE CHANGE GRADIENT-->
-    <div id='scene-change' class='container-fluid'></div>
 
-    <!-- SCENE 1: The Woods.
-        You find yourself in a dark wood serching for the path home! You must make it throught this maze of trees, to find the river.   -->
-    <div id='chapter1'>
-        <div class='chapter container-fluid'>
-        <div class='row'>
-            <h1 id='chapterTitle'>The Woods!</h1>
-        </div>
-        <div class='row'>
-            <!-- Left Frame/ Top Frame: Images-->
-            <div class='col-lg-8 col-lg-6 col-md-12'>
-                <img id='the-bat' class=' img-fluid' src='images/the-bat.png'>
+    <!-- Top Button -->
+
+    <button id='top-button' onclick='window.location.href="#home";'>
+        <i class='fas fa-chevron-up '></i>
+    </button>
+
+
+
+
+
+
+    <!-- Chapter 1-->
+    <div id='ch1' class='chapter'>
+        <div class='container fluid'>
+            <div class='chapter-title row justify-content-center'>
+                <h1>Chapter 1: The Dark Woods</h1>
             </div>
-            <!-- Right Frame/ Bottom Frame: Story and Game Controls-->
-            <div class='right col-lg-6 col-md-6'>
-                <div id='chapter-1-text' class='text-box row'>
-                    <p>You find yourself in a dark wood serching for the path home! You must make it throught
-                        this maze of trees, to find the river.</p>
+            <div id='ch1-image-box' class='image-box row justify-content-center'>
+                <img id='ch1-image' class='img-fluid' src='images/the-bat.png'>
+            </div>
+            <div class='game-box col-12 justify-content-center'>
+                <div class='text-box row  border '>
+                    <p id='ch1-text' class='text text-center'>The woods are dark and a little scary. You hear all sorts
+                        of animal noises around
+                        you. What could they be? As you enter a clearing, you see a small black bat hanging from a
+                        tree branch. He looks tired.</br>
+                        Say hello to the bat?</p>
                 </div>
-                <div id='chapter-1-controls' class='controls row justify-content-center'>
-                    <button id='back'>Back</button>
-                    <button id='continue' onClick='theWoods1()'>Continue</button>
+                <div id='ch1-controls' class='control-box row justify-content-center border'>
+                    <button id='ch1-00' class='continue'>Say hello to the Bat?</button>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Chapter 2  -->
+    <div id='ch2' class='chapter'>
+        <div class='container fluid'>
+            <div class='chapter-title row justify-content-center'>
+                <h1>Chapter 2: The Rushing River</h1>
+            </div>
+            <div id='ch2-image-box' class='image-box row justify-content-center'>
+                <img id='ch2-image' class='img-fluid' src='images/the-bat.png'>
+            </div>
+            <div class='game-box col-12 justify-content-center'>
+                <div class='text-box row border '>
+                    <p id='ch2-text' class='text text-center'>You find yourself in a dark wood searching for the path
+                        home! You must
+                        find
+                        a way
+                        through
+                        this maze of trees, and make it to the river.</p>
+                </div>
+                <div id='ch2-controls' class='control-box row justify-content-center border'>
+                    <button id='ch2-continue' class='continue'>Continue</button>
+                </div>
+            </div>
         </div>
     </div>
 
 
+    <!-- Chapter 3 -->
+    <div id='ch3' class='chapter'>
+        <div class='container fluid'>
+            <div class='chapter-title row justify-content-center'>
+                <h1>Chapter 3: The Cliffs of Climbing</h1>
+            </div>
+            <div id='ch3-image-box' class='image-box row justify-content-center'>
+                <img id='ch3-image' class='img-fluid' src='images/the-bat.png'>
+            </div>
+            <div class='game-box col-12 justify-content-center'>
+                <div class='text-box row border '>
+                    <p id='ch3-text' class='text text-center'></p>
+                </div>
+                <div id='ch3-controls' class='control-box row justify-content-center border'>
+                    <button id='ch3-continue' class='continue'>Continue</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Finale -->
+    <div id='finale' class='chapter'>
+        <div class='container-fluid'>
+            <div class='chapter-title row justify-content-center'>
+                <h1>Finale</h1>
+            </div>
+            <div id='finale-image-box' class='image-box row justify-content-center'>
+                <img id='finale-image' class='img-fluid' src=''>
+            </div>
+            <div class='game-box row justify-content-center'>
+                <div class='col-12'>
+                    <div id='finale-text' class='text-box row border '>
+                        <p></p>
+                    </div>
+                    <div id='finale- controls' class='control-box row justify-content-center border'>
+                        <button id='finale-button' class=''>Play Again?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
