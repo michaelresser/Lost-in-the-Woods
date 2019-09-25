@@ -98,7 +98,7 @@ html {
 
 /* CHAPTER 1 STYLES */
 #ch1 {
-  background: url('/images/the-dark-wood.png');
+  background: url('images/the-dark-wood.png');
 }
 #ch1-title {
   transition: all ease-in 0.5s;
