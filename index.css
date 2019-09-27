@@ -23,7 +23,7 @@ html {
 }
 .image-box {
   min-height: 50vh;
-  border: 2px solid silver;
+  
 }
 .game-box {
   min-height: 50%;
@@ -117,12 +117,11 @@ html {
 /* CHAPTER 2 Styles */
 #ch2 {
   background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(41, 137, 216, 1) 17%,
-    rgba(41, 137, 216, 1) 17%,
-    rgba(41, 137, 216, 1) 86%,
-    rgb(218, 144, 144) 100%
+    175deg,
+    rgba(0, 0, 0, 1) ,
+    rgba(41, 137, 216, 1) ,
+    rgba(41, 137, 216, 1) ,
+    rgba(0, 0, 0, 1)
   );
 }
 #ch2-game {
@@ -138,12 +137,11 @@ html {
 /* CHAPTER 3 Styles */
 #ch3 {
   background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(51, 122, 23, 1) 19%,
-    rgba(51, 122, 23, 1) 81%,
-    rgba(51, 122, 23, 1) 81%,
-    rgba(0, 0, 0, 1) 100%
+    175deg,
+    rgba(0, 0, 0, 1),
+    rgba(51, 122, 23, 1),
+    rgba(51, 122, 23, 1),
+    rgba(0, 0, 0, 1)
   );
 }
 #ch3-image {
@@ -163,7 +161,13 @@ html {
 
 /* FINALE STYLES */
 #finale {
-  background:  rgba(255, 174, 0) 90%;
+  background: linear-gradient(
+    175deg,
+    rgba(0, 0, 0, 1),
+    rgba(253, 190, 74, 1) , 
+    rgba(253, 190, 74, 1) , 
+    rgb(231, 231, 231) 
+  );
 }
 #finale-image{
   
