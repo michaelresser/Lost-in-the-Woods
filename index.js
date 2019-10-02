@@ -22,6 +22,8 @@ The pattern is prety simple (fingers crossed!):
 */
 
 // CHAPTER 1 - Bat Encounter
+/* This is the code to change the text on the initial button push in the Bat Game
+*/
 function batTextChange() {
     
     var x = document.getElementById("ch1-text");
