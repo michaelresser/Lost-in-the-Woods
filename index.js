@@ -24,13 +24,18 @@ The pattern is prety simple (fingers crossed!):
 // CHAPTER 1 - Bat Encounter
 /* This is the code to change the text on the initial button push in the Bat Game
 */
+
+
 function batTextChange() {
-    
-    var x = document.getElementById("ch1-text");
-    if (x.innerHTML === "The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.") {
-        x.innerHTML = "You say hello to the bat.  He tries to look up, but can barely move his head. \“O-o-oh hello, small human,\” he says, \“can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?\” You nod, and begin listening.  You hear different things in each direction; which one is a waterfall?";
+    let initialText = "The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.";
+
+    let changedText = "You say hello to the bat.  He tries to look up, but can barely move his head. \“O-o-oh hello, small human,\” he says, \“can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?\” You nod, and begin listening.  You hear different things in each direction; which one is a waterfall?";
+
+    let x = document.getElementById("ch1-text");
+    if (x.innerHTML === initialText) {
+        x.innerHTML = changedText;
     } else {
-        x.innerHTML = "The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.";
+        x.innerHTML = initialText;
     }
     }
 
