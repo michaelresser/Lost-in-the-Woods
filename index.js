@@ -1,9 +1,29 @@
 //test script
 console.log('test');
 
+
 /* NAVBAR LOGIC */
+// Navbar Responsive menu
+let w = window.innerWidth;
+let navbarToggleButton = document.getElementById('navbar-toggle');
+// let navbarNavItems = document.getElementById('nav-items');
+// console.log(navbarNavItems.classList);
+
+
+if (w <= 750) {
+    console.log('w: ' + w + ' < 750px');
+    navbarToggleButton.classList.remove('hidden');
+    // navbarNavItems.classList.add('hidden')
+} else {
+    console.log('w: ' + w + ' > 750px');
+    navbarToggleButton.classList.add('hidden');
+    // navbarNavItems.classList.remove('hidden')
+}
+
+// Navbar Toggle script
 const navbarToggle = () => {
-    console.log(document.getElementById('nav-buttons').classList.toggle('hidden'));
+    document.getElementById('nav-items').classList.toggle('hidden');
+    console.log(document.getElementById('nav-items').classList);
 }
 
 

@@ -7,10 +7,13 @@
 html {
   scroll-behavior: smooth;
 }
-
+/* GLOBAL ELEMENT STYLING */
+button{ 
+  border: none;
+}
 /* GLOBAL CLASSES */
 .hidden {
-  display: none;
+  opacity: 0;
 }
 .chapter {
   min-height: 100vh;  
@@ -41,14 +44,12 @@ html {
 .navbar{
   background: none;
 }
-.navbar > button{
-
-}
 #navbar{
   position: fixed;
-  right: 0;
-  top: 0;
-  width: auto;
+  z-index: 2;
+  right: 30px;
+  top: 10px;
+  width: 50px;
   height: auto;
   background: none;
   
@@ -58,13 +59,27 @@ html {
   height: 50px;
   margin: .5rem;
   background: #000000;
+  box-shadow: 0px 0px 2px 2px silver;
+  border-radius: 50%;
   color: silver;
-  border-radius: 5px;
   transition: all ease 0.8s;
 }
-#navbar > button:hover {
+#navbar  button:hover {
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1); 
+}
+@media screen and (min-width: 751px){
+  #toggle-butto{
+    opacity: 0
+  }
+  #nav-items{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 750px){
+  #nav-items{
+    display: none;
+  }
 }
 
 /* HOME PAGE STYLES */
