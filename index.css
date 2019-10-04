@@ -8,9 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 /* GLOBAL ELEMENT STYLING */
-button{ 
-  border: none;
-}
+
 /* GLOBAL CLASSES */
 .hidden {
   opacity: 0;
@@ -20,6 +18,7 @@ button{
   width: 100vw;
   padding: 2rem;
   color: silver;
+  text:
 }
 .chapter-title {
   color: silver;
@@ -64,22 +63,9 @@ button{
   color: silver;
   transition: all ease 0.8s;
 }
-#navbar  button:hover {
+#navbar button:hover {
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1); 
-}
-@media screen and (min-width: 751px){
-  #toggle-butto{
-    opacity: 0
-  }
-  #nav-items{
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 750px){
-  #nav-items{
-    display: none;
-  }
 }
 
 /* HOME PAGE STYLES */
