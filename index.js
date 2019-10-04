@@ -1,9 +1,29 @@
 //test script
 console.log('test');
 
+
 /* NAVBAR LOGIC */
+// Navbar Responsive menu
+    let w = window.innerWidth;
+    let navbarToggleButton = document.getElementById('navbar-toggle');
+    let navbarNavItems = document.getElementById('navbar-nav-items');
+    console.log(navbarNavItems.classList);
+
+    if (w <= 750) {
+        console.log('w: ' + w + ' < 750px');
+        navbarToggleButton.classList.remove('hidden');
+        navbarNavItems.classList.add('hidden')
+    } else {
+        console.log('w: ' + w + ' > 750px');
+        navbarToggleButton.classList.add('hidden');
+        navbarNavItems.classList.remove('hidden')
+    }
+
+
+// Navbar Toggle script
 const navbarToggle = () => {
-    console.log(document.getElementById('nav-buttons').classList.toggle('hidden'));
+    document.getElementById('nav-items').classList.toggle('hidden');
+    console.log(document.getElementById('nav-items').classList);
 }
 
 
@@ -28,16 +48,14 @@ The pattern is prety simple (fingers crossed!):
 
 function batTextChange() {
     let initialText = "The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.";
-
     let changedText = "You say hello to the bat.  He tries to look up, but can barely move his head. \“O-o-oh hello, small human,\” he says, \“can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?\” You nod, and begin listening.  You hear different things in each direction; which one is a waterfall?";
-
     let x = document.getElementById("ch1-text");
     if (x.innerHTML === initialText) {
         x.innerHTML = changedText;
     } else {
         x.innerHTML = initialText;
     }
-    }
+}
 
 
 // CHAPTER 1 - The Bat Game - Matching sounds

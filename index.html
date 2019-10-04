@@ -41,31 +41,33 @@
     </div>
 
     <!-- Navbar -->
-    <div id='navbar' class='d-flex flex-column justify border'>
-        <!-- Collapse Button -->
-        <button id='toggle-button' class='' onclick='navbarToggle()'>
+    <div id='navbar' class=''>
+        <!-- Navbar Toggle Button -->
+        <button id='navbar-toggle' class='' onclick='navbarToggle()'>
             <i class='fas fa-bars '></i>
         </button>
-        <!-- Nav-Items -->
-        <div id='nav-items' class='d-flex flex-column'>
+        <!-- Navbar Nav-Items -->
+        <div id='navbar-nav-items' class=''>
             <!-- Home Button -->
-            <button id='home-button' onclick='window.location.href="#home";'>
+            <button id='home-button' onclick='window.location.href="#home"'>
                 <i class='fas fa-home '></i>
             </button>
             <!-- Chapter 1-->
-            <button id='ch1-button' onclick='window.location.href="#ch1";'>
+            <button id='ch1-button' onclick='window.location.href="#ch1"'>
                 <i class=''>1</i>
             </button>
             <!-- Chapter 2-->
-            <button id='ch2-button' onclick='window.location.href="#ch2";'>
+            <button id='ch2-button' onclick='window.location.href="#ch2"'>
                 <i class=''>2</i>
             </button>
             <!-- Chapter 3-->
-            <button id='ch3-button' onclick='window.location.href="#ch3";'>
+            <button id='ch3-button' onclick='window.location.href="#ch3"'>
                 <i class=''>3</i>
             </button>
         </div>
     </div>
+    <!-- Testing the navbar toggle script here in the HTML, DOM queries for 'navbar-nav-items' keep coming up 'null' -->
+   
 
 
     <!-- Chapter 1-->
@@ -168,5 +170,6 @@
     </div>
 
 </body>
+<script type='text/javascript' src='index.js'></script>
 
 </html>
