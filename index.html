@@ -23,14 +23,14 @@
 
 <body>
     <!-- HOME PAGE -->
-    <div id='home' class='chapter'>
+    <div id='home' class='container-fluid fullscreen'>
         <div class='container'>
-            <div id='home-logo' class='chapter-image row justify-content-center'>
-                <img class='image-fluid' src='images/Lost in the Woods Logo.png'
+            <div id='home-image-row' class='row justify-content-center align-items-center'>
+                <img id='home-image' class='img-fluid' src='images/Lost in the Woods Logo.png'
                     alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
             </div>
             <div class='row justify-content-center'>
-                <button id='start-button' class=''>
+                <button id='start-button' class='col-6 col-sm-10'>
                     <a href='#ch1'>
                         <h1>press start</h1>
                     </a>
@@ -39,8 +39,9 @@
         </div>
     </div>
 
+
     <!-- Navbar -->
-    <div id='navbar' class='' >
+    <div id='navbar' class=''>
         <!-- Navbar Toggle Button -->
         <button id='navbar-toggle' class='' onclick='navbarToggleHidden()'>
             <i class='fas fa-bars'></i>
@@ -65,32 +66,33 @@
             </button>
         </div>
     </div>
-    
+
 
     <!-- Chapter 1-->
-    <div id='ch1' class='chapter'>
-        <div class='container'>
-            <div class='chapter-title row justify-content-center'>
-                <h1>Chapter 1: The Dark Woods</h1>
+    <div id='ch1' class='fullscreen'>
+        <div id='ch1-title' class='chapter-title row justify-content-center'>
+                <h2 class=''>Chapter 1: The Dark Woods</h2>
             </div>
-            <div id='ch1-image-box' class='image-box row justify-content-center'>
-                <img id='ch1-image' class='img-fluid' src='images/the-bat.png'>
+        <div id='ch-1' class='container h-100'>
+            <div id='ch1-image-box' class='row justify-content-center'>
+                <img id='ch1-image' class='chapter-image' src='images/the-bat.png'>
             </div>
-            <div id='ch1-game-box' class='game-box col-12 justify-content-center'>
-                <div class='text-box row'>
-                    <p id='ch1-text' class='text text-center'>The woods are dark and a little scary. You hear all sorts
+            <div id='ch1-game-box' class='game-box d-flex flex-column justify-content-start align-items-center py-3'>
+                <div id='ch1-text-box' class='text-box border'>
+                    <p id='ch1-text' class='text-center border'>The woods are dark and a little scary. You hear all
+                        sorts
                         of animal noises around you. What could they be? As you enter a clearing, you see a small black
                         bat hanging from a tree branch. He looks tired.</p>
                 </div>
-                <div id='ch1-controls' class='control-box row justify-content-center'>
-                    <button id='ch1-00' class='continue' onclick="batTextChange()">Say hello to the Bat?</button>
+                <div id='ch1-controls' class='controls row justify-content-center align-items-center border py-3'>
+                    <button id='ch1-00' class='' onclick="batTextChange()">Say hello to the Bat?</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Chapter 2  -->
-    <div id='ch2' class='chapter'>
+    <div id='ch2' class='fullscreen'>
         <div class='container'>
             <div class='chapter-title row justify-content-center'>
                 <h1>Chapter 2: The Rushing River</h1>
@@ -117,7 +119,7 @@
 
 
     <!-- Chapter 3 -->
-    <div id='ch3' class='chapter'>
+    <div id='ch3' class='fullscreen'>
         <div class='container'>
             <div class='chapter-title row justify-content-center'>
                 <h1>Chapter 3: The Cliffs of Climbing</h1>
@@ -143,7 +145,7 @@
     </div>
 
     <!-- Finale -->
-    <div id='finale' class='chapter'>
+    <div id='finale' class='fullscreen'>
         <div class='container'>
             <div class='chapter-title row justify-content-center'>
                 <h1>Finale</h1>
@@ -167,7 +169,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 <script type='text/javascript' src='index.js'></script>
 

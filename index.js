@@ -32,9 +32,6 @@ function navbarToggleHidden() {
 
 
 
-
-
-
 /* GAME LOGIC SECTION
 Im laying out the named functions in order of their use across the games timeline, and trying to name them sematically. ie: theWoods1, theWoods2, ticTacToe, etc.
 Below here, is my idea of mechanics more fleshed out. 
