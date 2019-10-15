@@ -3,28 +3,35 @@ console.log('test');
 
 
 /* NAVBAR LOGIC */
-// Navbar Responsive menu
-    let w = window.innerWidth;
-    let navbarToggleButton = document.getElementById('navbar-toggle');
-    let navbarNavItems = document.getElementById('navbar-nav-items');
-    console.log(navbarNavItems.classList);
 
-    if (w <= 750) {
-        console.log('w: ' + w + ' < 750px');
-        navbarToggleButton.classList.remove('hidden');
-        navbarNavItems.classList.add('hidden')
+// Navbar Responsive script    
+const responsiveNavbar = () => {
+    if (window.innerWidth < 750) {
+        console.log('w: ' + window.innerWidth + ' < 750px');
+        document.getElementById('navbar-toggle').classList.remove('hidden');
+        document.getElementById('navbar-items').classList.add('hidden');
     } else {
-        console.log('w: ' + w + ' > 750px');
-        navbarToggleButton.classList.add('hidden');
-        navbarNavItems.classList.remove('hidden')
+        console.log('w: ' + window.innerWidth + ' > 750px');
+        document.getElementById('navbar-toggle').classList.add('hidden');
+        document.getElementById('navbar-items').classList.remove('hidden');
     }
+};
 
+document.onload = responsiveNavbar();
+window.onresize = function (){
+    console.log(window.innerWidth);
+    responsiveNavbar();
+};
 
-// Navbar Toggle script
-const navbarToggle = () => {
-    document.getElementById('nav-items').classList.toggle('hidden');
-    console.log(document.getElementById('nav-items').classList);
+//Navbar Toggle Script
+function navbarToggleHidden() {
+    document.getElementById('navbar-items').classList.toggle('hidden');
 }
+
+
+
+
+
 
 
 

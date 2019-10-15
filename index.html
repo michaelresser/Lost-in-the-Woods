@@ -5,7 +5,6 @@
 <head>
     <meta title='Lost in the Woods...' />
     <link rel='stylesheet' type='text/css' href='index.css'>
-    <script type='text/javascript' src='index.js'></script>
     <!-- Boostrap 4.3.1. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,13 +40,13 @@
     </div>
 
     <!-- Navbar -->
-    <div id='navbar' class=''>
+    <div id='navbar' class='' >
         <!-- Navbar Toggle Button -->
-        <button id='navbar-toggle' class='' onclick='navbarToggle()'>
-            <i class='fas fa-bars '></i>
+        <button id='navbar-toggle' class='' onclick='navbarToggleHidden()'>
+            <i class='fas fa-bars'></i>
         </button>
         <!-- Navbar Nav-Items -->
-        <div id='navbar-nav-items' class=''>
+        <div id='navbar-items' class=''>
             <!-- Home Button -->
             <button id='home-button' onclick='window.location.href="#home"'>
                 <i class='fas fa-home '></i>
@@ -66,9 +65,7 @@
             </button>
         </div>
     </div>
-    <!-- Testing the navbar toggle script here in the HTML, DOM queries for 'navbar-nav-items' keep coming up 'null' -->
-   
-
+    
 
     <!-- Chapter 1-->
     <div id='ch1' class='chapter'>
@@ -81,7 +78,9 @@
             </div>
             <div id='ch1-game-box' class='game-box col-12 justify-content-center'>
                 <div class='text-box row'>
-                    <p id='ch1-text' class='text text-center'>The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.</p>
+                    <p id='ch1-text' class='text text-center'>The woods are dark and a little scary. You hear all sorts
+                        of animal noises around you. What could they be? As you enter a clearing, you see a small black
+                        bat hanging from a tree branch. He looks tired.</p>
                 </div>
                 <div id='ch1-controls' class='control-box row justify-content-center'>
                     <button id='ch1-00' class='continue' onclick="batTextChange()">Say hello to the Bat?</button>
@@ -168,7 +167,7 @@
             </div>
         </div>
     </div>
-
+    
 </body>
 <script type='text/javascript' src='index.js'></script>
 
