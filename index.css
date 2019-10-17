@@ -20,6 +20,8 @@ html {
   min-height: 100vh; 
   height: auto;
   width: 100vw;
+  padding: 2rem;
+  color: silver; 
 }
 .chapter-title {
   color: silver;
@@ -82,7 +84,8 @@ html {
     center/cover;
 }
 #start-button {
-  padding: .5rem 1rem;
+  margin: 0;
+  padding: 0 1rem;
   border-radius: 5px;
   background: #000000;
   color: silver;
