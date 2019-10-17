@@ -17,7 +17,6 @@ html {
   display: none !important;
 }
 .fullscreen {
-
   min-height: 100vh; 
   height: auto;
   width: 100vw;
@@ -107,7 +106,7 @@ html {
 
 /* CHAPTER 1 STYLES */
 #ch1 {
-  background: url('images/the-dark-wood.png');
+  background: url('images/the-dark-wood.png') center/cover ;
 }
 #ch1-title {
   transition: all ease-in 0.5s;
