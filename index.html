@@ -70,24 +70,28 @@
 
     <!-- Chapter 1-->
     <div id='ch1' class='fullscreen'>
+
         <div id='ch1-title' class='chapter-title row justify-content-center'>
-                <h2 class=''>Chapter 1: The Dark Woods</h2>
-            </div>
+            <h2 class=''>Chapter 1: The Dark Woods</h2>
+        </div>
         <div id='ch-1' class='container h-100'>
             <div id='ch1-image-box' class='row justify-content-center'>
                 <img id='ch1-image' class='chapter-image' src='images/the-bat.png'>
             </div>
-            <div id='ch1-game-box' class='game-box d-flex flex-column justify-content-start align-items-center py-3'>
-                <div id='ch1-text-box' class='text-box border'>
-                    <p id='ch1-text' class='text-center border'>The woods are dark and a little scary. You hear all
-                        sorts
-                        of animal noises around you. What could they be? As you enter a clearing, you see a small black
-                        bat hanging from a tree branch. He looks tired.</p>
-                </div>
-                <div id='ch1-controls' class='controls row justify-content-center align-items-center border py-3'>
-                    <button id='ch1-00' class='' onclick="batTextChange()">Say hello to the Bat?</button>
+
+            <div id='ch1-text' class='container game-box pt-3 border'>
+                <p class='text-center'>The woods are dark and a little scary. You hear all
+                    sorts
+                    of animal noises around you. What could they be? As you enter a clearing, you see a small black
+                    bat hanging from a tree branch. He looks tired.</p>
+            </div>
+
+            <div id='ch1-controls' class='container game-box justify-content-center align-items-center border py-3'>
+                <div class='row justify-content-center'>
+                    <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the Bat?</button>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -128,8 +132,8 @@
                 <img id='ch3-image' class='img-fluid' src='images/the-bat.png'>
             </div>
             <div id='ch3-game-box' class='game-box col-12 justify-content-center'>
-                <div class='text-box row'>
-                    <p id='ch3-text' class='text text-center'>As you walk along the path you start to hear a banging;
+                <div id='ch3-text' class='text-box row'>
+                    <p class='text text-center'>As you walk along the path you start to hear a banging;
                         soft at first but then getting
                         louder. You turn a corner and see a large orangutan banging a stick against a rock until it
                         breaks in two. He then picks up a large leaf and studies it for a bit before dropping it on top

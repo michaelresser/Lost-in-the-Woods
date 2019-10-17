@@ -17,7 +17,9 @@ html {
   display: none !important;
 }
 .fullscreen {
-  height: 100vh; 
+
+  min-height: 100vh; 
+  height: auto;
   width: 100vw;
 }
 .chapter-title {
@@ -26,27 +28,24 @@ html {
 .play-area{
   height: 100%;
 }
-.image-box {
-  max-height: 40%;
-}
+
 .chapter-image{
   width: 100%;
   max-width: 600px;
   height: auto;
 }
 .game-box {
-  max-height: 450px;
   background: #641b71;
   border-radius: 10px;    
-  position: relative;
+  margin: 2rem 0 ;
 }
-.text-box{
-  padding: 1rem;
-}
+
 .controls{
-  
-  position: absolute;
-  bottom: 0;
+
+}
+.game-button{
+  width: 100px;
+  margin: 0 1rem;
 }
 
 /* NAVBAR */
