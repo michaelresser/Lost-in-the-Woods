@@ -7,38 +7,48 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* GLOBAL ELEMENT STYLING */
+
+/* BOOTSTRAP CLASS ADJUSTMENTS */
 
 /* GLOBAL CLASSES */
 .hidden {
   display: none !important;
 }
-.chapter {
-  min-height: 100vh;  
+.fullscreen {
+  min-height: 100vh; 
+  height: auto;
   width: 100vw;
   padding: 2rem;
   color: silver; 
-  text:
 }
 .chapter-title {
   color: silver;
 }
-.image-box {
-  min-height: 50vh;
-  
+.play-area{
+  height: 100%;
+}
+
+.chapter-image{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 .game-box {
-  min-height: 50%;
   background: #641b71;
-  border-radius: 10px;
-  border: 2px solid silver;
+  border-radius: 10px;    
+  margin: 2rem 0 ;
 }
-.text-box {
-  padding: 2rem;
+
+.controls{
+
 }
-.control-box {
-  padding: 1rem;
+.game-button{
+  width: 100px;
+  margin: 0 1rem;
 }
+
 /* NAVBAR */
 .navbar{
   background: none;
@@ -50,8 +60,7 @@ html {
   top: 10px;
   width: 50px;
   height: auto;
-  background: none;
-  
+  background: none;  
 }
 #navbar button{
   width: 50px;
@@ -64,6 +73,7 @@ html {
   transition: all ease 0.8s;
 }
 #navbar button:hover {
+  background: rgb(109, 0, 233);
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1); 
 }
@@ -71,13 +81,7 @@ html {
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover fixed;
-}
-#home-logo {
-  height: 60%;
-}
-#home-logo img {
-  height: 100%;
+    center/cover;
 }
 #start-button {
   margin: 0;
@@ -89,6 +93,7 @@ html {
 }
 #start-button:hover {
   background: rgb(109, 0, 233);
+  cursor: pointer;
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1);
 }
@@ -109,15 +114,16 @@ html {
 #ch1-title {
   transition: all ease-in 0.5s;
 }
+#ch1-game-box{
+  height: 50%;
+}
 #ch1-text {
-  margin-top: 1rem;
+  height: auto;
   font-weight: 800;
+  color: silver;
 }
 #ch1-controls {
-}
-#ch1-continue {
-}
-#ch1-back {
+  height: auto;
 }
 
 /* CHAPTER 2 Styles */

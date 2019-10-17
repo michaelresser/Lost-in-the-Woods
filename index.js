@@ -18,7 +18,7 @@ const responsiveNavbar = () => {
 };
 
 document.onload = responsiveNavbar();
-window.onresize = function (){
+window.onresize = function () {
     console.log(window.innerWidth);
     responsiveNavbar();
 };
@@ -27,9 +27,6 @@ window.onresize = function (){
 function navbarToggleHidden() {
     document.getElementById('navbar-items').classList.toggle('hidden');
 }
-
-
-
 
 
 
@@ -53,17 +50,41 @@ The pattern is prety simple (fingers crossed!):
 */
 
 
-function batTextChange() {
-    let initialText = "The woods are dark and a little scary. You hear all sorts of animal noises around you. What could they be? As you enter a clearing, you see a small black bat hanging from a tree branch. He looks tired.";
-    let changedText = "You say hello to the bat.  He tries to look up, but can barely move his head. \“O-o-oh hello, small human,\” he says, \“can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?\” You nod, and begin listening.  You hear different things in each direction; which one is a waterfall?";
-    let x = document.getElementById("ch1-text");
-    if (x.innerHTML === initialText) {
-        x.innerHTML = changedText;
-    } else {
-        x.innerHTML = initialText;
-    }
-}
+function bat00() {
+    //1. Change Story Text
+    let changedText = '<p class="text-center">You say hello to the bat.  He tries to look up, but can barely move his head. “O-o-oh hello, small human,” he says, “can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?” You nod, and begin listening.  You hear different things in each direction... which one is a waterfall?</p>';
+    let ch1Text = document.getElementById("ch1-text");
+    console.log(ch1Text.children);
+    ch1Text.insertAdjacentHTML('beforeend', changedText);
+    console.log(ch1Text.children);
+    ch1Text.children[0].remove();
 
+
+    //2. Add Audio HTML
+    document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='/sounds/stream.mp3' type='audio/mpeg'></source></audio><audio id='sound01'><source src='/sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
+    console.log('audio tag added');
+
+    //Remove Continue button
+    document.getElementById('btn-ch1-00').remove();
+    console.log('continue button removed');
+
+    //Add Audio Buttons
+    const newButtonsArr = ["<button id='sound-btn-01' class='game-button' onclick='playWest()'>West</button>", "<button id='sound-btn-02' class='game-button' onclick='playNorth()'>North</button>", "<button id='sound-btn-03' class='game-button' onclick='playEast()'>East</button>"];
+    newButtonsArr.forEach(function(item) {
+        document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', item);
+        console.log('audio buttons added');
+    });
+
+}
+function playWest() {
+    document.getElementById('sound01').play();
+}
+function playNorth() {
+    document.getElementById('sound02').play();
+}
+function playEast() {
+    document.getElementById('sound03').play();
+}
 
 // CHAPTER 1 - The Bat Game - Matching sounds
 
