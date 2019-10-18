@@ -17,10 +17,9 @@ html {
   display: none !important;
 }
 .fullscreen {
-  min-height: 100vh; 
-  height: auto;
+  /* min-height: 100%;  */
+  max-height: 100vh;
   width: 100vw;
-  padding: 2rem;
   color: silver; 
 }
 .chapter-title {
@@ -55,20 +54,19 @@ html {
 }
 #navbar{
   position: fixed;
-  z-index: 2;
-  right: 30px;
-  top: 10px;
-  width: 50px;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  width: 100px;
   height: auto;
   background: none;  
 }
 #navbar button{
-  width: 50px;
+  width: 100px;
   height: 50px;
-  margin: .5rem;
   background: #000000;
   box-shadow: 0px 0px 2px 2px silver;
-  border-radius: 50%;
+  
   color: silver;
   transition: all ease 0.8s;
 }
@@ -81,7 +79,8 @@ html {
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover;
+    center/cover
+     ;
 }
 #start-button {
   margin: 0;
