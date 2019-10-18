@@ -22,24 +22,6 @@
 </head>
 
 <body>
-    <!-- HOME PAGE -->
-    <div id='home' class='container-fluid fullscreen'>
-        <div class='container'>
-            <div id='home-image-row' class='row justify-content-center align-items-center'>
-                <img id='home-image' class='img-fluid' src='images/Lost in the Woods Logo.png'
-                    alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
-            </div>
-            <div class='row justify-content-center'>
-                <button id='start-button' class='col-6 col-sm-10'>
-                    <a href='#ch1'>
-                        <h1>press start</h1>
-                    </a>
-                </button>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Navbar -->
     <div id='navbar' class='container'>
         <!-- Navbar Toggle Button -->
@@ -67,6 +49,25 @@
         </div>
     </div>
 
+    <!-- HOME PAGE -->
+    <div id='home' class='container-fluid fullscreen '>
+        <div class='container'>
+            <div id='home-img-row' class='row justify-content-center align-items-center'>
+                <img id='home-image' class='img-fluid col-10' src='images/Lost in the Woods Logo.png'
+                    alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
+            </div>
+        </div>
+        <div id='start-button row' class='row justify-content-center align-content-center'>
+            <button id='start-button' class=''>
+                <a href='#ch1'>
+                    <h1>press start</h1>
+                </a>
+            </button>
+        </div>
+    </div>
+    </div>
+
+
 
     <!-- Chapter 1-->
     <div id='ch1' class='container-fluid fullscreen'>
@@ -74,17 +75,18 @@
             <h2 class=''>Chapter 1: The Dark Woods</h2>
         </div>
         <div id='ch-1' class='container h-100'>
-            <div id='ch1-image-box' class='row justify-content-center'>
-                <img id='ch1-image' class='chapter-image' src='images/the-bat.png'>
-            </div>
+            
+                <img id='ch1-image' class='img-fluid col-10' src='images/the-bat.png'>
+            
 
-            <div id='ch1-text' class='container game-box pt-3 border'>
+            <div id='ch1-text' class='container game-box pt-3 m-0'>
                 <p class='text-center'>The woods are dark and a little scary. You hear all
                     sorts
                     of animal noises around you. What could they be? As you enter a clearing, you see a small black
                     bat hanging from a tree branch. He looks tired.</p>
             </div>
-            <div id='ch1-controls' class='container game-box justify-content-center align-items-center border py-3'>
+            <div id='ch1-controls'
+                class='container game-box justify-content-center align-items-center border py-3 mt-0 mb-5'>
                 <div class='row justify-content-center'>
                     <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the Bat?</button>
                 </div>
