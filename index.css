@@ -17,73 +17,76 @@ html {
   display: none !important;
 }
 .fullscreen {
-  /* min-height: 100%;  */
-  max-height: 100vh;
+  height: 100vh;
   width: 100vw;
-  color: silver; 
+  
 }
 .chapter-title {
   color: silver;
 }
-.play-area{
+.play-area {
   height: 100%;
 }
 
-.chapter-image{
+.chapter-image {
   width: 100%;
   max-width: 600px;
   height: auto;
 }
 .game-box {
   background: #641b71;
-  border-radius: 10px;    
-  margin: 2rem 0 ;
+  border-radius: 10px;
+  margin: 2rem 0;
 }
 
-.controls{
-
+.controls {
 }
-.game-button{
+.game-button {
   width: 100px;
   margin: 0 1rem;
 }
 
 /* NAVBAR */
-.navbar{
+.navbar {
   background: none;
 }
-#navbar{
+#navbar {
   position: fixed;
   z-index: 2000;
   top: 0;
   right: 0;
   width: 100px;
   height: auto;
-  background: none;  
+  background: none;
 }
-#navbar button{
+#navbar button {
   width: 100px;
   height: 50px;
   background: #000000;
   box-shadow: 0px 0px 2px 2px silver;
-  
+
   color: silver;
   transition: all ease 0.8s;
 }
 #navbar button:hover {
   background: rgb(109, 0, 233);
   box-shadow: 0px 0px 5px 5px silver;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover
-     ;
+    center/cover;
 }
-#start-button {
-  margin: 0;
+#home-image-row{
+  margin-top: 10%;
+  height: 75%;
+}
+#start-button-row{
+  min-height: 25%;
+}
+#start-button {  
   padding: 0 1rem;
   border-radius: 5px;
   background: #000000;
@@ -100,6 +103,8 @@ html {
   color: inherit;
   /* font-family: 'retroGaming'; */
 }
+
+
 /* SCENE CHANGE STYLES */
 #scene-change {
   height: 800vh;
@@ -110,10 +115,14 @@ html {
 #ch1 {
   background: url('images/the-dark-wood.png') center/cover ;
 }
+#ch1-image-box{
+  margin-top: 10vh;
+  height: 5%;
+}
 #ch1-title {
   transition: all ease-in 0.5s;
 }
-#ch1-game-box{
+#ch1-game-box {
   height: 50%;
 }
 #ch1-text {
@@ -129,9 +138,9 @@ html {
 #ch2 {
   background: linear-gradient(
     175deg,
-    rgba(0, 0, 0, 1) ,
-    rgba(41, 137, 216, 1) ,
-    rgba(41, 137, 216, 1) ,
+    rgba(0, 0, 0, 1),
+    rgba(41, 137, 216, 1),
+    rgba(41, 137, 216, 1),
     rgba(0, 0, 0, 1)
   );
 }
@@ -156,7 +165,6 @@ html {
   );
 }
 #ch3-image {
-  
 }
 #ch3-game {
   height: 40%;
@@ -175,11 +183,10 @@ html {
   background: linear-gradient(
     175deg,
     rgba(0, 0, 0, 1),
-    rgba(253, 190, 74, 1) , 
-    rgba(253, 190, 74, 1) , 
-    rgb(231, 231, 231) 
+    rgba(253, 190, 74, 1),
+    rgba(253, 190, 74, 1),
+    rgb(231, 231, 231)
   );
 }
-#finale-image{
-  
+#finale-image {
 }
