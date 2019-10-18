@@ -61,7 +61,7 @@ function bat00() {
 
 
     //2. Add Audio HTML
-    document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='/sounds/stream.mp3' type='audio/mpeg'></source></audio><audio id='sound01'><source src='/sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
+    document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'><./source></audio><audio id='sound01'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
     console.log('audio tag added');
 
     //Remove Continue button
