@@ -18,8 +18,7 @@ html {
 }
 .fullscreen {
   height: 100vh;
-  width: 100vw;
-  
+  width: 100vh;  
 }
 .chapter-title {
   color: silver;
@@ -27,7 +26,6 @@ html {
 .play-area {
   height: 100%;
 }
-
 .chapter-image {
   width: 100%;
   max-width: 600px;
@@ -38,7 +36,6 @@ html {
   border-radius: 10px;
   margin: 2rem 0;
 }
-
 .controls {
 }
 .game-button {
@@ -79,12 +76,11 @@ html {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
     center/cover;
 }
-#home-image-row{
-  margin-top: 10%;
-  height: 75%;
+#home-img-row{
+  
 }
 #start-button-row{
-  min-height: 25%;
+  
 }
 #start-button {  
   padding: 0 1rem;
