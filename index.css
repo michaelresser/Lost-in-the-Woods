@@ -18,18 +18,19 @@ html {
 }
 .fullscreen {
   height: 100vh;
-  width: 100vh;  
+  width: 100vw;  
+  display: flex;
+  flex-direction: column;
+  flex-flow: 1 1 auto;  
 }
 .chapter-title {
   color: silver;
 }
 .play-area {
-  height: 100%;
+  
 }
 .chapter-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+
 }
 .game-box {
   background: #641b71;
@@ -74,13 +75,12 @@ html {
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover;
+    center/cover fixed;
 }
-#home-img-row{
-  
+#home-image{
+
 }
-#start-button-row{
-  
+#start-button-row{  
 }
 #start-button {  
   padding: 0 1rem;
@@ -112,8 +112,8 @@ html {
   background: url('images/the-dark-wood.png') center/cover ;
 }
 #ch1-image-box{
-  margin-top: 10vh;
-  height: 5%;
+  /* margin-top: 10vh;
+  height: 5%; */
 }
 #ch1-title {
   transition: all ease-in 0.5s;

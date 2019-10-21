@@ -4,6 +4,7 @@
 
 <head>
     <meta title='Lost in the Woods...' />
+    <meta name='viewport' width='device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='index.css'>
     <!-- Boostrap 4.3.1. -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -50,50 +51,58 @@
     </div>
 
     <!-- HOME PAGE -->
-    <div id='home' class='container-fluid fullscreen border'>
-        <div class='container pt-5'>
-            <div id='home-img-row' class='row justify-content-center align-items-center'>
-                <img id='home-image' class='img-fluid col-lg-6 col-md-8 col-sm-8 col-8' src='images/Lost in the Woods Logo.png'
+    <div id='home' class='fullscreen'>
+        <div class='d-flex flex-sm-column col-12 justify-content-center border'>
+            <div id='home-image-row' class='row justify-content-center border'>
+                <img id='home-image' class='img-fluid bg-dark' src='images/Lost in the Woods Logo.png'
                     alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
             </div>
+
+            <div id='start-button-row' class='row justify-content-center border'>
+                <button id='start-button' class=' col-lg-6 col-md-6 col-sm-6 border'>
+                    <a href='#ch1'>press start</a>
+                </button>
+            </div>
         </div>
-        <div id='start-button row' class='row justify-content-center align-content-center'>
-            <button id='start-button' class='col-lg-6 col-md-6 col-sm-8 col-8'>
-                <a href='#ch1'>
-                    <h1>press start</h1>
-                </a>
-            </button>
-        </div>
-    </div>
     </div>
 
 
 
     <!-- Chapter 1-->
     <div id='ch1' class='container-fluid fullscreen'>
-        <div id='ch1-title' class='chapter-title row justify-content-center'>
-            <h2 class=''>Chapter 1: The Dark Woods</h2>
-        </div>
-        <div id='ch-1' class='container h-100'>
-            <img id='ch1-image' class='img-fluid col-10' src='images/the-bat.png'>
-            <div id='ch1-text' class='container game-box pt-3 m-0'>
-                <p class='text-center'>The woods are dark and a little scary. You hear all
-                    sorts
-                    of animal noises around you. What could they be? As you enter a clearing, you see a small black
-                    bat hanging from a tree branch. He looks tired.</p>
-            </div>
-            <div id='ch1-controls'
-                class='container game-box justify-content-center align-items-center border py-3 mt-0 mb-5'>
-                <div class='row justify-content-center'>
-                    <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the Bat?</button>
+        <div class='container bg-dark h-100 border'>
+            <div class='col-12 border'>
+                <div id='ch-1' class='container h-100'>
+                    <div id='ch1-title' class='chapter-title row justify-content-center'>
+                        <h2 class='h3'>Chapter 1: The Dark Woods</h2>
+                    </div>
+                    <div class='row justify-content-center'>
+                        <img id='ch1-image' class='img-fluid col-lg-6 col-md-8 col-sm-12 col-12'
+                            src='images/the-bat.png'>
+                    </div>
+                    <div class='game-box container'>
+                        <div id='ch1-text' class='row pt-3 m-0'>
+                            <p class='text-center'>The woods are dark and a little scary. You hear all
+                                sorts
+                                of animal noises around you. What could they be? As you enter a clearing, you see a
+                                small
+                                black
+                                bat hanging from a tree branch. He looks tired.</p>
+                        </div>
+                        <div id='ch1-controls'
+                            class='row justify-content-center align-items-center border py-3 mt-0 mb-5'>
+                            <div class='row justify-content-center'>
+                                <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the Bat?</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <!-- Chapter 2  -->
-    <div id='ch2' class='fullscreen'>
+    <div id='ch2' class='container-fluid fullscreen'>
         <div class='container'>
             <div class='chapter-title row justify-content-center'>
                 <h1>Chapter 2: The Rushing River</h1>
@@ -103,9 +112,11 @@
             </div>
             <div id='ch2-game-box' class='game-box col-12 justify-content-center'>
                 <div class='text-box row '>
-                    <p id='ch2-text' class='text text-center'>You walk for what seems like hours. Slowly, the sound of a
+                    <p id='ch2-text' class='text text-center'>You walk for what seems like hours. Slowly, the sound
+                        of a
                         river begins to drown out the
-                        animal noises of the forest. The path opens up and you see the biggest river you’ve ever seen.
+                        animal noises of the forest. The path opens up and you see the biggest river you’ve ever
+                        seen.
                         It rushes by with whole trees zooming past you in its current. How will you ever cross this?
                         After a moment, a hippopotamus floats to the surface, lazily chewing on some river
                         grass. She eyes you and slowly floats over. “Hello, small hu-hu-huuuuuuuman,” She yawns, “I
@@ -120,7 +131,7 @@
 
 
     <!-- Chapter 3 -->
-    <div id='ch3' class='fullscreen'>
+    <div id='ch3' class='container-fluid fullscreen'>
         <div class='container'>
             <div class='chapter-title row justify-content-center'>
                 <h1>Chapter 3: The Cliffs of Climbing</h1>
@@ -133,9 +144,11 @@
                     <p class='text text-center'>As you walk along the path you start to hear a banging;
                         soft at first but then getting
                         louder. You turn a corner and see a large orangutan banging a stick against a rock until it
-                        breaks in two. He then picks up a large leaf and studies it for a bit before dropping it on top
+                        breaks in two. He then picks up a large leaf and studies it for a bit before dropping it on
+                        top
                         of
-                        the rock. Behind him is a huge rock wall, and the path seems to dead end into it. There is no
+                        the rock. Behind him is a huge rock wall, and the path seems to dead end into it. There is
+                        no
                         way you could climb that yourself, but maybe he could help! </p>
                 </div>
                 <div id='ch3-controls' class='control-box row justify-content-center '>
@@ -158,9 +171,12 @@
                 <div class=''>
                     <div id='finale-text' class='text-box row'>
                         <p>From high atop the cliff, the woods below don’t seem so scary. You turn around and
-                            see the path ahead of you. You walk for a bit and suddenly recognize a bridge ahead of you!
-                            That bridge isn’t far from home! Underneath it, you can just make out three shapes. You walk
-                            up and see your new friends. Though it is getting late and you need to get home, they invite
+                            see the path ahead of you. You walk for a bit and suddenly recognize a bridge ahead of
+                            you!
+                            That bridge isn’t far from home! Underneath it, you can just make out three shapes. You
+                            walk
+                            up and see your new friends. Though it is getting late and you need to get home, they
+                            invite
                             you back anytime to the dark and now not-so-scary wood to play games with them.</p>
                     </div>
                     <div id='finale- controls' class='control-box row justify-content-center'>
