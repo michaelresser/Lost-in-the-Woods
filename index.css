@@ -19,14 +19,17 @@ html {
 .fullscreen {
   height: 100vh;
   width: 100vw;  
+  padding-right: 2vw;
   display: flex;
   flex-direction: column;
   flex-flow: 1 1 auto;  
 }
+
 .chapter-title {
   color: silver;
 }
 .play-area {
+  max-height: 100vh;
   
 }
 .chapter-image {
@@ -77,8 +80,11 @@ html {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
     center/cover fixed;
 }
+#home-image-row{
+}
 #home-image{
-
+  margin-left: auto;
+  margin-right: auto;
 }
 #start-button-row{  
 }
@@ -87,6 +93,7 @@ html {
   border-radius: 5px;
   background: #000000;
   color: silver;
+  flex-flow: 1 1 auto;
   transition: all ease-in-out 0.5s;
 }
 #start-button:hover {

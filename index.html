@@ -50,22 +50,30 @@
         </div>
     </div>
 
+    <!-- !START: UI-home-page -->
+    <!-- testing a two column setup to better render on widescreen devices. -MRE-->
+
     <!-- HOME PAGE -->
     <div id='home' class='fullscreen'>
-        <div class='d-flex flex-sm-column col-12 justify-content-center border'>
-            <div id='home-image-row' class='row justify-content-center border'>
-                <img id='home-image' class='img-fluid bg-dark' src='images/Lost in the Woods Logo.png'
-                    alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
-            </div>
-
-            <div id='start-button-row' class='row justify-content-center border'>
-                <button id='start-button' class=' col-lg-6 col-md-6 col-sm-6 border'>
-                    <a href='#ch1'>press start</a>
-                </button>
+        <div class='play-area container-fluid my-5'>
+            <div class='d-flex row justify-content-center border'>
+                <div id='home-image-row'
+                    class=' col-lg-10 col-md-10 col-sm-12 col-12 align-content-center bg-success border'>
+                    <img id='home-image' class='img-fluid bg-dark' src='images/Lost in the Woods Logo.png'
+                        alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
+                </div>
+                <div id='start-button-row' class='col-lg-10 col-md-10 col-sm-12 col-12 bg-warning border'>
+                    <div class='row justify-content-center'>
+                        <button id='start-button' class=' col-lg-10 col-md-10 col-sm-12 col-12 border'>
+                            <a href='#ch1'>
+                                <h1>press start</h1>
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 
 
     <!-- Chapter 1-->
@@ -92,7 +100,8 @@
                         <div id='ch1-controls'
                             class='row justify-content-center align-items-center border py-3 mt-0 mb-5'>
                             <div class='row justify-content-center'>
-                                <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the Bat?</button>
+                                <button id='btn-ch1-00' class='btn-' onclick='bat00()'>Say hello to the
+                                    Bat?</button>
                             </div>
                         </div>
                     </div>
