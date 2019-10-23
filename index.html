@@ -54,40 +54,30 @@
     <!-- testing a two column setup to better render on widescreen devices. -MRE-->
 
     <!-- HOME PAGE -->
-    <div id='home' class='fullscreen'>
-        <div class='play-area container-fluid my-5'>
-            <div class='d-flex row justify-content-center border'>
-                <div id='home-image-row'
-                    class=' col-lg-10 col-md-10 col-sm-12 col-12 align-content-center bg-success border'>
-                    <img id='home-image' class='img-fluid bg-dark' src='images/Lost in the Woods Logo.png'
+    <div id='home' class="fullscreen">
+        <div class="row h-100 justify-content-center align-content-center py-5">
+            <div class="container">
+                <div class='row justify-content-center m-3 '>
+                    <img id='home-image' class='img-fluid col-lg-6 col-md-8 col-sm-10 col-10 flex-grow-1 flex-shrink-1 ' src='images/Lost in the Woods Logo.png'
                         alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
                 </div>
-                <div id='start-button-row' class='col-lg-10 col-md-10 col-sm-12 col-12 bg-warning border'>
-                    <div class='row justify-content-center'>
-                        <button id='start-button' class=' col-lg-10 col-md-10 col-sm-12 col-12 border'>
-                            <a href='#ch1'>
-                                <h1>press start</h1>
-                            </a>
-                        </button>
-                    </div>
+                <div class='row justify-content-center m-5 '>
+                    <button id='start-button' class='col-lg-5 col-md-5 col-sm-8 col-8'>
+                        <a href='#ch1' class=''>PLAY</a>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!-- Chapter 1-->
-    <div id='ch1' class='container-fluid fullscreen'>
-        <div class='container bg-dark h-100 border'>
-            <div class='col-12 border'>
-                <div id='ch-1' class='container h-100'>
-                    <div id='ch1-title' class='chapter-title row justify-content-center'>
-                        <h2 class='h3'>Chapter 1: The Dark Woods</h2>
-                    </div>
-                    <div class='row justify-content-center'>
-                        <img id='ch1-image' class='img-fluid col-lg-6 col-md-8 col-sm-12 col-12'
-                            src='images/the-bat.png'>
-                    </div>
+        <!-- Chapter 1-->
+        <div id='ch1' class='row justify-content-center fullscreen'>
+            <div class='play-area container border'>
+                <h2 class='h3 text-light'>Chapter 1: The Dark Woods</h2>
+                <div class='col-12'>
+                    <img id='ch1-image' class='img-fluid col-lg-6 col-md-6 col-sm-12 col-12' src='images/the-bat.png'>
+
                     <div class='game-box container'>
                         <div id='ch1-text' class='row pt-3 m-0'>
                             <p class='text-center'>The woods are dark and a little scary. You hear all

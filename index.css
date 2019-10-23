@@ -18,30 +18,23 @@ html {
 }
 .fullscreen {
   height: 100vh;
-  width: 100vw;  
-  padding-right: 2vw;
-  display: flex;
-  flex-direction: column;
-  flex-flow: 1 1 auto;  
-}
-
-.chapter-title {
-  color: silver;
-}
-.play-area {
-  max-height: 100vh;
+  width: 100vw;
+  padding-right: 1.5vw;
+  
   
 }
-.chapter-image {
-
+.play-area {
+  min-height: 80vh;
+}
+.chapter-title {
+  color: silver;
 }
 .game-box {
   background: #641b71;
   border-radius: 10px;
   margin: 2rem 0;
 }
-.controls {
-}
+
 .game-button {
   width: 100px;
   margin: 0 1rem;
@@ -80,20 +73,14 @@ html {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
     center/cover fixed;
 }
-#home-image-row{
+
+#home-image {
+
 }
-#home-image{
-  margin-left: auto;
-  margin-right: auto;
-}
-#start-button-row{  
-}
-#start-button {  
-  padding: 0 1rem;
-  border-radius: 5px;
+#start-button {
+  border-radius: 10px;
   background: #000000;
   color: silver;
-  flex-flow: 1 1 auto;
   transition: all ease-in-out 0.5s;
 }
 #start-button:hover {
@@ -104,9 +91,8 @@ html {
 }
 #start-button a {
   color: inherit;
-  /* font-family: 'retroGaming'; */
+  
 }
-
 
 /* SCENE CHANGE STYLES */
 #scene-change {
@@ -116,9 +102,9 @@ html {
 
 /* CHAPTER 1 STYLES */
 #ch1 {
-  background: url('images/the-dark-wood.png') center/cover ;
+  background: url('images/the-dark-wood.png') center/cover;
 }
-#ch1-image-box{
+#ch1-image-box {
   /* margin-top: 10vh;
   height: 5%; */
 }
