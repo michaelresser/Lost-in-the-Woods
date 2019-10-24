@@ -3,6 +3,8 @@
   font-family: 'RetroGaming';
   src: url('fonts/Retro Gaming.ttf');
 }
+/* TYPOGRAPHY */
+
 /* GLOBAL ELEMENT STYLING */
 html {
   scroll-behavior: smooth;
@@ -19,31 +21,18 @@ html {
 .fullscreen {
   height: 100vh;
   width: 100vw;
-  
+}
+.play-area {
+  min-height: 80vh;
 }
 .chapter-title {
   color: silver;
 }
-.play-area {
-  height: 100%;
-}
-
-.chapter-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+.chapter-text{
+  color: silver;
 }
 .game-box {
   background: #641b71;
-  border-radius: 10px;
-  margin: 2rem 0;
-}
-
-.controls {
-}
-.game-button {
-  width: 100px;
-  margin: 0 1rem;
 }
 
 /* NAVBAR */
@@ -77,18 +66,16 @@ html {
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover;
+    center/cover fixed;
 }
-#home-image-row{
-  margin-top: 10%;
-  height: 75%;
+
+#home-image {
+  max-height: 100%;
 }
-#start-button-row{
-  min-height: 25%;
-}
-#start-button {  
-  padding: 0 1rem;
-  border-radius: 5px;
+#start-button {
+  font-size: 2rem;
+  padding: .8rem 5rem;
+  border-radius: 10px;
   background: #000000;
   color: silver;
   transition: all ease-in-out 0.5s;
@@ -101,9 +88,8 @@ html {
 }
 #start-button a {
   color: inherit;
-  /* font-family: 'retroGaming'; */
+  
 }
-
 
 /* SCENE CHANGE STYLES */
 #scene-change {
@@ -113,26 +99,12 @@ html {
 
 /* CHAPTER 1 STYLES */
 #ch1 {
-  background: url('images/the-dark-wood.png') center/cover ;
+  background: url('images/the-dark-wood.png') center/cover;
 }
-#ch1-image-box{
-  margin-top: 10vh;
-  height: 5%;
-}
-#ch1-title {
-  transition: all ease-in 0.5s;
-}
-#ch1-game-box {
-  height: 50%;
-}
-#ch1-text {
-  height: auto;
-  font-weight: 800;
-  color: silver;
-}
-#ch1-controls {
-  height: auto;
-}
+
+
+
+
 
 /* CHAPTER 2 Styles */
 #ch2 {
