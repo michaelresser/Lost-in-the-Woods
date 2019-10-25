@@ -19,7 +19,6 @@ const responsiveNavbar = () => {
 
 document.onload = responsiveNavbar();
 window.onresize = function () {
-    console.log(window.innerWidth);
     responsiveNavbar();
 };
 
@@ -52,28 +51,25 @@ The pattern is prety simple (fingers crossed!):
 
 function bat00() {
     //1. Change Story Text
-    let changedText = '<p class="text-center">You say hello to the bat.  He tries to look up, but can barely move his head. “O-o-oh hello, small human,” he says, “can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a waterfall near my home.  Can you help me listen for it?” You nod, and begin listening.  You hear different things in each direction... which one is a waterfall?</p>';
+    let changedText = '<p class="text-center">You say hello to the bat.  He tries to look up, but can barely move his head. “O-o-oh hello, small human,” he says, “can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a river near my home.  Can you help me listen for it?” You nod, and begin listening.  You hear different things in each direction... which one is a river?</p>';
     let ch1Text = document.getElementById("ch1-text");
-    console.log(ch1Text.children);
-    ch1Text.insertAdjacentHTML('beforeend', changedText);
-    console.log(ch1Text.children);
-    ch1Text.children[0].remove();
+    
+    ch1Text.innerHTML = changedText;
+    
 
 
     //2. Add Audio HTML
-    document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'><./source></audio><audio id='sound01'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
-    console.log('audio tag added');
+    // document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'><./source></audio><audio id='sound02><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
+    // console.log('audio tag added');
 
     //Remove Continue button
     document.getElementById('btn-ch1-00').remove();
     console.log('continue button removed');
-
-    //Add Audio Buttons
-    const newButtonsArr = ["<button id='sound-btn-01' class='game-button' onclick='playWest()'>West</button>", "<button id='sound-btn-02' class='game-button' onclick='playNorth()'>North</button>", "<button id='sound-btn-03' class='game-button' onclick='playEast()'>East</button>"];
-    newButtonsArr.forEach(function(item) {
-        document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', item);
-        console.log('audio buttons added');
-    });
+   
+    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', " <form id='ch1-game' class='bg-dark p-3' onsubmit='batGameCheckWinner()'>    <audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'></source></audio>    <audio id='sound02'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio>    <audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>    <div class='row p-3 justify-content-center'><div class='col-3'><button id='sound-btn-01' class='game-button col-12' onclick='playWest()'>West</button><input type='radio' name='audioSubmit' value='river' class='col-12' id='ch1-game-river'></div><div class='col-3'><button id='sound-btn-02' class='game-button col-12' onclick='playNorth()'>North</button><input type='radio' name='audioSubmit'value='woods' class='col-12'            id='ch1-game-woods'></div><div class='col-3'><button id='sound-btn-03' class='game-button col-12' onclick='playEast()'>East</button><input type='radio' name='audioSubmit' value='owl'            class='col-12' id='ch1-game-owl'></div></div>    <div class='row justify-content-center'>        <button type='submit' name='audioSubmit' id='ch1-submit' class='m-3'>Guess!</button></div></form>");
+    
+    console.log('audio buttons added');
+   
 
 }
 function playWest() {
@@ -87,6 +83,31 @@ function playEast() {
 }
 
 // CHAPTER 1 - The Bat Game - Matching sounds
+
+const batGameCheckWinner = () => {
+    let river = document.getElementById('ch1-game-river');    
+    if (river.checked === true) {
+        console.log('winner');
+        batGameFinale();
+        //     Including final Image, final text & continue button.     
+    } else {
+        console.log('loser');
+        // call function to tell player to try again.
+    }
+} 
+
+const batGameFinale = () => {
+    //1. Remove game elements
+    document.getElementById('ch1-game').remove();
+    console.log('game removed');
+    //2. Change image
+    document.getElementById('ch1-image').src = '/images/the-river.jpg'
+    //3. Change text
+    document.getElementById('ch1-text').innerHTML = 'Good Job. You didnt die yet.'
+    //4. Add Continue Button
+    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin',  "<button class='' ><a href='#ch2'>Continue?</a></button>")
+}
+
 
 
 

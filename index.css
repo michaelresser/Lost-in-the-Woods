@@ -101,7 +101,9 @@ html {
 #ch1 {
   background: url('images/the-dark-wood.png') center/cover;
 }
-
+#ch1-game input[imput=radio]{
+  height: 10px;
+}
 
 
 
