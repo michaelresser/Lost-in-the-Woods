@@ -49,40 +49,49 @@ The pattern is prety simple (fingers crossed!):
 */
 
 
-function bat00() {
-    //1. Change Story Text
-    let changedText = '<p class="text-center">You say hello to the bat.  He tries to look up, but can barely move his head. “O-o-oh hello, small human,” he says, “can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a river near my home.  Can you help me listen for it?” You nod, and begin listening.  You hear different things in each direction... which one is a river?</p>';
-    let ch1Text = document.getElementById("ch1-text");
-    
-    ch1Text.innerHTML = changedText;
-    
+const bat00 = () => {
+    //CHANGE IMAGE
+    document.getElementById('ch1-image').src = 'images/the-bat-02.png'
+
+    //CHANGE STORY TEXT
+    let changedText = '<p class="text-center">You say hello to the bat.  He tries to look up, but can barely move his head. “O-o-oh hello, small human,” he says, “can you help me?  I’ve been flying all night and all day and can’t find my cave!  I can’t see very well, but I can usually hear a river near my home.  Can you help me listen for it?”';
+    document.getElementById("ch1-text").innerHTML = changedText;
+
+    //CHANGE BUTTON TEXT
+    let continueBtn = document.getElementById('ch1-continue-btn');
+    continueBtn.innerHTML = 'Help the bat!';
+    continueBtn.setAttribute('onclick', 'bat01()');
+
+}
 
 
-    //2. Add Audio HTML
-    // document.getElementById('ch1').insertAdjacentHTML('afterbegin', "<audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'><./source></audio><audio id='sound02><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio><audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>");
-    // console.log('audio tag added');
+const bat01 = () => {
+    //Change Story Text
+    let changedText = 'You nod, and begin listening.  You hear different things in each direction... which one is a river?';
+    document.getElementById("ch1-text").innerHTML = changedText;
+
+    //Change Image
+    document.getElementById('ch1-image').src = 'images/the-bat-03.png'
 
     //Remove Continue button
-    document.getElementById('btn-ch1-00').remove();
+    document.getElementById('ch1-continue-btn').remove();
     console.log('continue button removed');
-   
-    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', " <form id='ch1-game' class='bg-dark p-3' onsubmit='batGameCheckWinner()'>    <audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'></source></audio>    <audio id='sound02'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio>    <audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>    <div class='row p-3 justify-content-center'><div class='col-3'><button id='sound-btn-01' class='game-button col-12' onclick='playWest()'>West</button><input type='radio' name='audioSubmit' value='river' class='col-12' id='ch1-game-river'></div><div class='col-3'><button id='sound-btn-02' class='game-button col-12' onclick='playNorth()'>North</button><input type='radio' name='audioSubmit'value='woods' class='col-12'            id='ch1-game-woods'></div><div class='col-3'><button id='sound-btn-03' class='game-button col-12' onclick='playEast()'>East</button><input type='radio' name='audioSubmit' value='owl'            class='col-12' id='ch1-game-owl'></div></div>    <div class='row justify-content-center'>        <button type='submit' name='audioSubmit' id='ch1-submit' class='m-3'>Guess!</button></div></form>");
-    
-    console.log('audio buttons added');
+
+    //Add Game Components
+    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', " <form id='ch1-game' class='bg-dark p-3' onsubmit='batGameCheckWinner()'>    <audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'></source></audio>    <audio id='sound02'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio>    <audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>    <div class='row p-3 justify-content-center'><div class='col-3'><button id='sound-btn-01' class='game-button col-12' onclick='playWest()'>West</button><input type='radio' name='audioSubmit' value='river' class='col-12' id='ch1-game-river'></div><div class='col-3'><button id='sound-btn-02' class='game-button col-12' onclick='playNorth()'>North</button><input type='radio' name='audioSubmit'value='woods' class='col-12' id='ch1-game-woods'></div><div class='col-3'><button id='sound-btn-03' class='game-button col-12' onclick='playEast()'>East</button><input type='radio' name='audioSubmit' value='owl' class='col-12' id='ch1-game-owl'></div></div> <div class='row justify-content-center'><button type='submit' name='audioSubmit' id='ch1-submit' class='m-3'>Guess!</button></div></form>");
+    console.log('game component added');
    
 
 }
-function playWest() {
+const playWest = () => {
     document.getElementById('sound01').play();
 }
-function playNorth() {
+const playNorth = () => {
     document.getElementById('sound02').play();
 }
-function playEast() {
+const playEast = () => {
     document.getElementById('sound03').play();
 }
-
-// CHAPTER 1 - The Bat Game - Matching sounds
 
 const batGameCheckWinner = () => {
     let river = document.getElementById('ch1-game-river');    
@@ -97,15 +106,15 @@ const batGameCheckWinner = () => {
 } 
 
 const batGameFinale = () => {
-    //1. Remove game elements
+    //REMOVE GAEM ELEMENT
     document.getElementById('ch1-game').remove();
     console.log('game removed');
-    //2. Change image
-    document.getElementById('ch1-image').src = '/images/the-river.jpg'
-    //3. Change text
-    document.getElementById('ch1-text').innerHTML = 'Good Job. You didnt die yet.'
-    //4. Add Continue Button
-    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin',  "<button class='' ><a href='#ch2'>Continue?</a></button>")
+    //CHANGE IMAGE
+    document.getElementById('ch1-image').src = '/images/the-bat-04.png'
+    // CHANGE TEXT
+    document.getElementById('ch1-text').innerHTML = 'THe bat is Happy!'
+    // ADD CONTINUE BUTTON
+    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin',  "<button id='ch1-continue-btn' class='' ><a href='#ch2'>Continue</a></button>")
 }
 
 
