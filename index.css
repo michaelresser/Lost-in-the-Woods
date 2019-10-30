@@ -18,21 +18,31 @@ html {
 .hidden {
   display: none !important;
 }
-.fullscreen {
+.background {
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
 }
-.play-area {
-  min-height: 80vh;
+.box {
 }
-.chapter-title {
+.title {
   color: silver;
 }
-.chapter-text{
-  color: silver;
+.image {
 }
 .game-box {
+  position: relative;
   background: #641b71;
+}
+.text-box {
+  color: silver;
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+}
+.game-btn {
+  padding: .5rem;
+  border-radius: 10px;
 }
 
 /* NAVBAR */
@@ -74,7 +84,7 @@ html {
 }
 #start-button {
   font-size: 2rem;
-  padding: .8rem 5rem;
+  padding: 0.8rem 5rem;
   border-radius: 10px;
   background: #000000;
   color: silver;
@@ -88,7 +98,6 @@ html {
 }
 #start-button a {
   color: inherit;
-  
 }
 
 /* SCENE CHANGE STYLES */
@@ -100,12 +109,8 @@ html {
 /* CHAPTER 1 STYLES */
 #ch1 {
   background: url('images/the-dark-wood.png') center/cover;
+  color: silver;
 }
-#ch1-game input[imput=radio]{
-  height: 10px;
-}
-
-
 
 
 /* CHAPTER 2 Styles */

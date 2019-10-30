@@ -58,7 +58,7 @@ const bat00 = () => {
     document.getElementById("ch1-text").innerHTML = changedText;
 
     //CHANGE BUTTON TEXT
-    let continueBtn = document.getElementById('ch1-continue-btn');
+    let continueBtn = document.getElementById('ch1-btn-continue');
     continueBtn.innerHTML = 'Help the bat!';
     continueBtn.setAttribute('onclick', 'bat01()');
 
@@ -74,15 +74,16 @@ const bat01 = () => {
     document.getElementById('ch1-image').src = 'images/the-bat-03.png'
 
     //Remove Continue button
-    document.getElementById('ch1-continue-btn').remove();
+    document.getElementById('ch1-btn-continue').remove();
     console.log('continue button removed');
 
     //Add Game Components
-    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin', " <form id='ch1-game' class='bg-dark p-3' onsubmit='batGameCheckWinner()'>    <audio id='sound01'><source src='./sounds/stream.mp3' type='audio/mpeg'></source></audio>    <audio id='sound02'><source src='./sounds/woods.mp3' type='audio/mpeg'></source></audio>    <audio id='sound03'><source src='/sounds/owl.mp3' type='audio/mpeg'></source></audio>    <div class='row p-3 justify-content-center'><div class='col-3'><button id='sound-btn-01' class='game-button col-12' onclick='playWest()'>West</button><input type='radio' name='audioSubmit' value='river' class='col-12' id='ch1-game-river'></div><div class='col-3'><button id='sound-btn-02' class='game-button col-12' onclick='playNorth()'>North</button><input type='radio' name='audioSubmit'value='woods' class='col-12' id='ch1-game-woods'></div><div class='col-3'><button id='sound-btn-03' class='game-button col-12' onclick='playEast()'>East</button><input type='radio' name='audioSubmit' value='owl' class='col-12' id='ch1-game-owl'></div></div> <div class='row justify-content-center'><button type='submit' name='audioSubmit' id='ch1-submit' class='m-3'>Guess!</button></div></form>");
+    document.getElementById('ch1-game').classList.remove('hidden');
     console.log('game component added');
    
 
 }
+
 const playWest = () => {
     document.getElementById('sound01').play();
 }
@@ -112,11 +113,9 @@ const batGameFinale = () => {
     //CHANGE IMAGE
     document.getElementById('ch1-image').src = '/images/the-bat-04.png'
     // CHANGE TEXT
-    document.getElementById('ch1-text').innerHTML = 'THe bat is Happy!'
+    document.getElementById('ch1-text').innerHTML = 'Well done!';
     // ADD CONTINUE BUTTON
-    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin',  "<button id='ch1-continue-btn' class='' ><a href='#ch2'>Continue</a></button>")
+    document.getElementById('ch1-controls').insertAdjacentHTML('afterbegin',  "<button id='ch1-btn-continue' class=''><a href='#ch2'>Continue to Chapter 2</a></button>")
 }
-
-
 
 
