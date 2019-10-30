@@ -89,9 +89,7 @@
                     <button id='ch1-btn-continue' class='mx-auto' onclick='bat00()'>Say hello to the
                         Bat?</button>
                 </div>
-                <!---->
-
-                <form id='ch1-game' class='container p-3 hidden border' onsubmit='batGameCheckWinner()'>
+                <div id='ch1-game' class='container p-3 border'>
                     <!-- AUDIO TAGS -->
                     <audio id='sound01'>
                         <source src='./sounds/stream.mp3' type='audio/mpeg'>
@@ -105,133 +103,136 @@
                         <source src='/sounds/owl.mp3' type='audio/mpeg'>
                         </source>
                     </audio>
-                <!-- GAME INSTRUCTIONS-->
+                    <!-- GAME INSTRUCTIONS-->
                     <p>Hover over the buttons to hear the sounds! Click on the one which sounds like the river.</p>
-                <!-- GAME BUTTONS -->
+                    <!-- GAME BUTTONS -->
                     <div id='ch1-game-btns' class='row p-3 justify-content-center'>
-                        <div class='col-4 align-content-center'>
-                            <button id='ch1-game-btn1' class='game-btn col-12'>West</button>
-                            <input type='radio' name='audioSubmit' value='river' class='col-12' id='ch1-game-river'>
+                        <div class='col-4'>
+                            <button id='ch1-game-btn1' class='game-btn col-12' value='river' onmouseover='playWest()'
+                                onmouseout='stopWest()' onclick='checkWinnerBat(event)'>West</button>
                         </div>
-                        <div class=' col-4'><button id='sound-btn-02' class='game-btn col-12'
-                                onclick='playNorth()'>North</button><input type='radio' name='audioSubmit' value='woods'
-                                class='col-12' id='ch1-game-woods'></div>
-                        <div class='col-4'><button id='sound-btn-03' class='game-btn col-12'
-                                onclick='playEast()'>East</button><input type='radio' name='audioSubmit' value='owl'
-                                class='col-12' id='ch1-game-owl'></div>
-                    </div>
-                    <div class='row justify-content-center'><button type='submit' name='audioSubmit' id='ch1-submit'
-                            class='m-3'>Guess!</button></div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-
-
-    <!-- Chapter 2  -->
-    <div id='ch2' class='fullscreen'>
-        <div class="row h-100 justify-content-start align-content-center pt-5 border">
-            <div class="container h-100 border">
-                <div class='row align-items-center chapter-title border'>
-                    <h2>Chapter 2: The Rushing River</h2>
-                </div>
-                <div class='row justify-content-center border'>
-                    <img id='ch2-image'
-                        class='img-fluid col-lg-6 col-md-8 col-sm-12 col-10 flex-grow-1 flex-shrink-1 border'
-                        src='images/the-bat.png'>
-                </div>
-                <div class='game-box container py-3 border'>
-                    <div id='ch2-text' class='chapter-text row p-3'>
-                        <p class='text-center'>
-                            <p id='ch2-text' class='text text-center'>You walk for what seems like hours. Slowly, the
-                                sound
-                                of a
-                                river begins to drown out the
-                                animal noises of the forest. The path opens up and you see the biggest river you’ve ever
-                                seen.
-                                It rushes by with whole trees zooming past you in its current. How will you ever cross
-                                this?
-                                After a moment, a hippopotamus floats to the surface, lazily chewing on some river
-                                grass. She eyes you and slowly floats over. “Hello, small hu-hu-huuuuuuuman,” She yawns,
-                                “I
-                                suppose you’d like to cross the river, hoommmmm?”</p>
-                    </div>
-                    <div id='ch2-controls' class='row justify-content-center border'>
-                        <button id='btn-ch2-00' class='' onclick='hippo00()'>Say hello to the
-                            Hippo?</button>
-
+                        <div class=' col-4'>
+                            <button id='sound-btn-02' class='game-btn col-12' value='crickets' onmouseover='playNorth()'
+                                onmouseout='stopNorth()' onclick='checkWinnerBat(event)'>North</button>
+                        </div>
+                        <div class='col-4'>
+                            <button id='sound-btn-03' class='game-btn col-12' value='owl' onmouseover='playEast()'
+                                onmouseout='stopEast()' onclick='checkWinnerBat(event)'>East</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div>
 
-    <!-- Chapter 3 -->
-    <div id='ch3' class='container-fluid fullscreen'>
-        <div class='container'>
-            <div class='chapter-title row justify-content-center'>
-                <h1>Chapter 3: The Cliffs of Climbing</h1>
-            </div>
-            <div id='ch3-image-box' class='image-box row justify-content-center'>
-                <img id='ch3-image' class='img-fluid' src='images/the-bat.png'>
-            </div>
-            <div id='ch3-game-box' class='game-box col-12 justify-content-center'>
-                <div id='ch3-text' class='text-box row'>
-                    <p class='text text-center'>As you walk along the path you start to hear a banging;
-                        soft at first but then getting
-                        louder. You turn a corner and see a large orangutan banging a stick against a rock until it
-                        breaks in two. He then picks up a large leaf and studies it for a bit before dropping it on
-                        top
-                        of
-                        the rock. Behind him is a huge rock wall, and the path seems to dead end into it. There is
-                        no
-                        way you could climb that yourself, but maybe he could help! </p>
-                </div>
-                <div id='ch3-controls' class='control-box row justify-content-center '>
-                    <button id='ch3-continue' class='continue'>Say Hello!</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Finale -->
-    <div id='finale' class='fullscreen'>
-        <div class='container'>
-            <div class='chapter-title row justify-content-center'>
-                <h1>Finale</h1>
-            </div>
-            <div id='finale-image-box' class='image-box row justify-content-center'>
-                <img id='finale-image' class='img-fluid' src='images/the-bat.png' alt='escape-from-the-woods-image'>
-            </div>
-            <div class='game-box col-12 justify-content-center'>
-                <div class=''>
-                    <div id='finale-text' class='text-box row'>
-                        <p>From high atop the cliff, the woods below don’t seem so scary. You turn around and
-                            see the path ahead of you. You walk for a bit and suddenly recognize a bridge ahead of
-                            you!
-                            That bridge isn’t far from home! Underneath it, you can just make out three shapes. You
-                            walk
-                            up and see your new friends. Though it is getting late and you need to get home, they
-                            invite
-                            you back anytime to the dark and now not-so-scary wood to play games with them.</p>
+
+
+
+        <!-- Chapter 2  -->
+        <div id='ch2' class='fullscreen'>
+            <div class="row h-100 justify-content-start align-content-center pt-5 border">
+                <div class="container h-100 border">
+                    <div class='row align-items-center chapter-title border'>
+                        <h2>Chapter 2: The Rushing River</h2>
                     </div>
-                    <div id='finale- controls' class='control-box row justify-content-center'>
-                        <button id='finale-button' class=''>Play Again?</button>
+                    <div class='row justify-content-center border'>
+                        <img id='ch2-image'
+                            class='img-fluid col-lg-6 col-md-8 col-sm-12 col-10 flex-grow-1 flex-shrink-1 border'
+                            src='images/the-bat.png'>
+                    </div>
+                    <div class='game-box container py-3 border'>
+                        <div id='ch2-text' class='chapter-text row p-3'>
+                            <p class='text-center'>
+                                <p id='ch2-text' class='text text-center'>You walk for what seems like hours. Slowly,
+                                    the
+                                    sound
+                                    of a
+                                    river begins to drown out the
+                                    animal noises of the forest. The path opens up and you see the biggest river you’ve
+                                    ever
+                                    seen.
+                                    It rushes by with whole trees zooming past you in its current. How will you ever
+                                    cross
+                                    this?
+                                    After a moment, a hippopotamus floats to the surface, lazily chewing on some river
+                                    grass. She eyes you and slowly floats over. “Hello, small hu-hu-huuuuuuuman,” She
+                                    yawns,
+                                    “I
+                                    suppose you’d like to cross the river, hoommmmm?”</p>
+                        </div>
+                        <div id='ch2-controls' class='row justify-content-center border'>
+                            <button id='btn-ch2-00' class='' onclick='hippo00()'>Say hello to the
+                                Hippo?</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div>
-        <!-- TEST HTML FOR ENCOUNTERS -->
 
-        <!-- END TEST HTML -->
-    </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div id='ch3' class='container-fluid fullscreen'>
+            <div class='container'>
+                <div class='chapter-title row justify-content-center'>
+                    <h1>Chapter 3: The Cliffs of Climbing</h1>
+                </div>
+                <div id='ch3-image-box' class='image-box row justify-content-center'>
+                    <img id='ch3-image' class='img-fluid' src='images/the-bat.png'>
+                </div>
+                <div id='ch3-game-box' class='game-box col-12 justify-content-center'>
+                    <div id='ch3-text' class='text-box row'>
+                        <p class='text text-center'>As you walk along the path you start to hear a banging;
+                            soft at first but then getting
+                            louder. You turn a corner and see a large orangutan banging a stick against a rock until it
+                            breaks in two. He then picks up a large leaf and studies it for a bit before dropping it on
+                            top
+                            of
+                            the rock. Behind him is a huge rock wall, and the path seems to dead end into it. There is
+                            no
+                            way you could climb that yourself, but maybe he could help! </p>
+                    </div>
+                    <div id='ch3-controls' class='control-box row justify-content-center '>
+                        <button id='ch3-continue' class='continue'>Say Hello!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Finale -->
+        <div id='finale' class='fullscreen'>
+            <div class='container'>
+                <div class='chapter-title row justify-content-center'>
+                    <h1>Finale</h1>
+                </div>
+                <div id='finale-image-box' class='image-box row justify-content-center'>
+                    <img id='finale-image' class='img-fluid' src='images/the-bat.png' alt='escape-from-the-woods-image'>
+                </div>
+                <div class='game-box col-12 justify-content-center'>
+                    <div class=''>
+                        <div id='finale-text' class='text-box row'>
+                            <p>From high atop the cliff, the woods below don’t seem so scary. You turn around and
+                                see the path ahead of you. You walk for a bit and suddenly recognize a bridge ahead of
+                                you!
+                                That bridge isn’t far from home! Underneath it, you can just make out three shapes. You
+                                walk
+                                up and see your new friends. Though it is getting late and you need to get home, they
+                                invite
+                                you back anytime to the dark and now not-so-scary wood to play games with them.</p>
+                        </div>
+                        <div id='finale- controls' class='control-box row justify-content-center'>
+                            <button id='finale-button' class=''>Play Again?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- TEST HTML FOR ENCOUNTERS -->
+
+            <!-- END TEST HTML -->
+        </div>
 </body>
 <script type='text/javascript' src='index.js'></script>
 
