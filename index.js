@@ -84,6 +84,17 @@ const stopEast = () => {
     audio.pause();
     audio.currentTime = 0;
 }
+
+const checkWinnerBat = (event) => {
+    let x = event.srcElement.value;
+    if (x === 'river') {
+        batGameFinale();
+    } else {
+        alert('try again');
+    }
+
+};
+
 // const batGameCheckWinner = () => {
 //     let river = document.getElementById('ch1-game-river');
 //     if (river.checked === true) {
