@@ -1,0 +1,14 @@
+Mapping out branches for more streamlined dev workflow. 
+Please follow lowercase naming conventions and upstream flow pattern.
+
+
+master
+-->master-dev
+    -->ch1
+        -->ch1-game
+        -->ch1-style
+
+    
+    -->ch2
+        -->ch2-game
+        -->ch2-style
