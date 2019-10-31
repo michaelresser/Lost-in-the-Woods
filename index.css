@@ -18,13 +18,13 @@ html {
 .hidden {
   display: none !important;
 }
-.background {
-  height: 100vh;
-  width: 99vw;
+.page {
+   position: relative;
+   height: 100vh;
 }
-.box {
-}
+
 .title {
+  height: 10vh;
   color: silver;
 }
 .image {
@@ -46,28 +46,31 @@ html {
 }
 
 /* NAVBAR */
-.navbar {
-  background: none;
-}
-#navbar {
+
+#main-nav{
   position: fixed;
-  z-index: 2000;
+  width: auto;
+  max-width: 500px;
+  height: 100vh;
+  padding: 0;
+  z-index: 200;
   top: 0;
   right: 0;
-  width: 100px;
-  height: auto;
   background: none;
 }
-#navbar button {
-  width: 100px;
-  height: 50px;
-  background: #000000;
+#main-nav-items{
+  
+}
+.main-nav-btn {
+  width: 100%;
+  height: 10%;
+  font-size: 5rem;
+  background: none;
   box-shadow: 0px 0px 2px 2px silver;
-
   color: silver;
   transition: all ease 0.8s;
 }
-#navbar button:hover {
+.main-nav-btn:hover {
   background: rgb(109, 0, 233);
   box-shadow: 0px 0px 5px 5px silver;
   transform: scale(1.1);
@@ -76,7 +79,7 @@ html {
 /* HOME PAGE STYLES */
 #home {
   background: url('https://steamuserimages-a.akamaihd.net/ugc/784104461439493515/6501301E63C18B9D5E8F39A18E24F8868B6E7508/')
-    center/cover fixed;
+    center/cover;
 }
 
 #home-image {

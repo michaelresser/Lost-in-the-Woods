@@ -24,43 +24,50 @@
 
 <body>
     <!-- Navbar -->
-    <div id='navbar' class='row'>
+    <div id='main-nav' class='container bg-dark border'>
         <!-- Navbar Toggle Button -->
-        <button id='navbar-toggle' class='' onclick='navbarToggleHidden()'>
+        <button id='main-nav-toggle' class='main-nav-btn bg-success
+        ' onclick='mainNavToggle()'>
             <i class='fas fa-bars'></i>
         </button>
         <!-- Navbar Nav-Items -->
-        <div id='navbar-items' class=''>
+        <div id='main-nav-items' class='h-100 hidden border'>
             <!-- Home Button -->
-            <button id='home-button' onclick='window.location.href="#home"'>
-                <i class='fas fa-home '></i>
+            <button id='home-button' class='main-nav-btn' onclick='window.location.href="#home"'>
+                <i class='fas fa-home'></i>
             </button>
             <!-- Chapter 1-->
-            <button id='ch1-button' onclick='window.location.href="#ch1"'>
-                <i class=''>1</i>
+            <button id='ch1-button' class=' main-nav-btn' onclick='window.location.href="#ch1"'>
+                1
             </button>
             <!-- Chapter 2-->
-            <button id='ch2-button' onclick='window.location.href="#ch2"'>
-                <i class=''>2</i>
+            <button id='ch2-button' class=' main-nav-btn' onclick='window.location.href="#ch2"'>
+                2
             </button>
             <!-- Chapter 3-->
-            <button id='ch3-button' onclick='window.location.href="#ch3"'>
-                <i class=''>3</i>
+            <button id='ch3-button' class=' main-nav-btn' onclick='window.location.href="#ch3"'>
+                3
+            </button>
+            <button id='ch3-button' class=' main-nav-btn' onclick='window.location.href="#ch3"'>
+                end
+            </button>
+            <button id='ch3-button' class=' main-nav-btn' onclick='window.location.href="#ch3"'>
+                credits
             </button>
         </div>
     </div>
 
     <!-- HOME PAGE -->
-    <div id='home' class="background ">
-        <div class="box mx-auto col-lg-8 col-md-10 col-sm-12 col-12 h-100 border">
-            <div class="container">
-                <div class='row justify-content-center m-3 '>
-                    <img id='home-image' class='img-fluid col-lg-8 col-md-10 col-sm-12 col-12'
+    <div id='home' class="page ">
+        <div class="border">
+            <div class="">
+                <div class='row justify-content-center'>
+                    <img id='home-image' class='img-fluid w-75'
                         src='images/Lost in the Woods Logo.png'
                         alt='Lost in the Woods: An adventure by Tripp Martin and Michael Esser'></img>
                 </div>
                 <div class='row justify-content-center m-5'>
-                    <button id='start-button' class=''>
+                    <button id='start-button' class='w-50'>
                         <a href='#ch1' class=''>PLAY</a>
                     </button>
                 </div>
@@ -70,8 +77,8 @@
 
 
     <!-- Chapter 1-->
-    <div id='ch1' class='background '>
-        <div class="box mx-auto col-lg-8 col-md-10 col-sm-12 col-12 h-100 border">
+    <div id='ch1' class='page'>
+        <div class="mx-auto col-lg-8 col-md-10 col-sm-12 col-12 h-100 border">
             <div class='row justify-content-center ch-title border'>
                 <h2 class='title'>Chapter 1: The Dark Woods</h2>
             </div>
@@ -130,7 +137,7 @@
 
 
         <!-- Chapter 2  -->
-        <div id='ch2' class='fullscreen'>
+        <div id='ch2' class='page container-fluid'>
             <div class="row h-100 justify-content-start align-content-center pt-5 border">
                 <div class="container h-100 border">
                     <div class='row align-items-center chapter-title border'>

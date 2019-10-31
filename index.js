@@ -1,27 +1,14 @@
 //test script
 console.log('test');
-
-
+//diagnostic stripts
+window.onresize = () => {
+    console.clear();
+    console.log('new-size: ' + window.innerWidth + ' x ' + window.InnerHeight)
+};
 /* NAVBAR LOGIC */
-// Navbar Responsive script    
-const responsiveNavbar = () => {
-    if (window.innerWidth < 750) {
-        console.log('w: ' + window.innerWidth + ' < 750px');
-        document.getElementById('navbar-toggle').classList.remove('hidden');
-        document.getElementById('navbar-items').classList.add('hidden');
-    } else {
-        console.log('w: ' + window.innerWidth + ' > 750px');
-        document.getElementById('navbar-toggle').classList.add('hidden');
-        document.getElementById('navbar-items').classList.remove('hidden');
-    }
-};
-document.onload = responsiveNavbar();
-window.onresize = function () {
-    responsiveNavbar();
-};
 //Navbar Toggle Script
-function navbarToggleHidden() {
-    document.getElementById('navbar-items').classList.toggle('hidden');
+const mainNavToggle = () => {
+    document.getElementById('main-nav-items').classList.toggle('hidden');
 }
 
 /* GAME LOGIC SECTION*/
@@ -84,6 +71,17 @@ const stopEast = () => {
     audio.pause();
     audio.currentTime = 0;
 }
+
+const checkWinnerBat = (event) => {
+    let x = event.srcElement.value;
+    if (x === 'river') {
+        batGameFinale();
+    } else {
+        alert('try again');
+    }
+
+};
+
 // const batGameCheckWinner = () => {
 //     let river = document.getElementById('ch1-game-river');
 //     if (river.checked === true) {
